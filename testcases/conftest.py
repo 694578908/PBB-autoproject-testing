@@ -1,5 +1,6 @@
 import pytest
 
+from common.read_write_yaml import YamlUtil
 from common.readfile_config_path import read_config_ini
 
 
@@ -14,3 +15,9 @@ def read_config_redis_data():
     data = (host, password, port, db, key)
     print(host, password, port, db, key)
     return data
+
+# 实时清除extract.yml
+@pytest.fixture(scope="session", autouse=True)
+def clear_extract_yaml():
+    YamlUtil().clear_extract_yaml()
+    yield

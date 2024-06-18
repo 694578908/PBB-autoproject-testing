@@ -1,0 +1,32 @@
+login:
+- name: 登录账号密码
+  requests:
+    method: get
+    headers:
+      Content-Type: application/json
+      Client: member
+    url: http://139.9.34.76:8930/applet/user/getCode?phone=15881086121
+    data:
+  extract:
+    mobile: 'code'
+  validate:
+    - equals: {code: 0}
+
+- name: 手机号
+  requests:
+    method: post
+    headers:
+      Content-Type: application/json
+      Client: member
+    url: http://139.9.34.76:8930/applet/user/verificationLogin
+    data:
+        brand: "iPhone",
+        deviceId: "59AAC7B0-F77C-407F-988B-345CCA200D30",
+        model: "iPhone",
+        platform: "iOS",
+        systemName: "iOS 17.5.1",
+        code: ${code},
+        mobile: "15881086121",
+        parentUserId: ""
+  validate:
+    - equals: {code: 0}

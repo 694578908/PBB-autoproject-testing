@@ -24,5 +24,3 @@ def test_read_redis(read_config_redis_data):
     redis_client.close()
 
 
-if __name__ == '__main__':
-    pytest.main()
