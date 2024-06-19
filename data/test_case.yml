@@ -4,7 +4,7 @@ login:
     method: get
     headers:
       Content-Type: application/json
-      Client: member
+      site: app
     url: http://139.9.34.76:8930/applet/user/getCode?phone=15881086123
     data:
   validate:
