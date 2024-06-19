@@ -11,10 +11,11 @@ def read_redis(read_config_redis_data):
     if response:
         folder_key = 'pbb_applet_user_login_code:'
         full_key = folder_key + key
-        value = redis_client.get(full_key)
-        if value is None:
+        full_key_value = redis_client.get(full_key)
+        if full_key_value is None:
             error_message = "未获取到验证码，请检查手机号输入是否正确（手机号切勿设置白名单）"
             pytest.fail(error_message)
+        value = full_key_value.strip('""')
         data = {'code': value}
         YamlUtil().write_extract_yaml(data)
     else:

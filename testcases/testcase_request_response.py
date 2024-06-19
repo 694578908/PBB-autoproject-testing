@@ -6,6 +6,7 @@ import pytest
 
 from common.regular_expression_method import regular_expression_extract
 from common.request_util import RequestUtil
+from common.variable_correlation_method import readextract_and_replacevariables
 
 
 def case_request(case):
@@ -13,6 +14,7 @@ def case_request(case):
         if jsonpath.jsonpath(case, '$..url') and jsonpath.jsonpath(case, '$..method') \
                 and jsonpath.jsonpath(case, '$..data') and jsonpath.jsonpath(case, '$..headers'):
             allure.dynamic.title(case['name'])
+            readextract_and_replacevariables(case)
             title = case['name']
             headers = case['requests']['headers']
             url = case['requests']['url']
