@@ -5,10 +5,8 @@ login:
     headers:
       Content-Type: application/json
       Client: member
-    url: http://139.9.34.76:8930/applet/user/getCode?phone=15881086121
+    url: http://139.9.34.76:8930/applet/user/getCode?phone=15881086122
     data:
-  extract:
-    mobile: 'code'
   validate:
     - equals: {code: 0}
 

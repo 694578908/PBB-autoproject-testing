@@ -4,6 +4,7 @@ import allure
 import jsonpath
 import pytest
 
+from common.regular_expression_method import regular_expression_extract
 from common.request_util import RequestUtil
 
 
@@ -19,16 +20,13 @@ def case_request(case):
             method = case['requests']['method']
             request_result = RequestUtil().send_request_util(title, headers, url, data, method)
             res = json.loads(request_result)
-            return res
+            if 'extract' in case:
+                extract_value = case['extract']
+                regular_expression_extract(extract_value, request_result)
+            return url
         else:
             jsonpath_case_message = '在yml文件requests目录下必须要有method,url,data,headers'
             pytest.fail(jsonpath_case_message)
     else:
         case_key_message = 'yml一级关键字必须包含:name,requests,validate'
         pytest.fail(case_key_message)
-
-
-
-
-
-

@@ -16,8 +16,9 @@ def read_config_redis_data():
     print(host, password, port, db, key)
     return data
 
+
 # 实时清除extract.yml
-# @pytest.fixture(scope="session", autouse=True)
-# def clear_extract_yaml():
-#     YamlUtil().clear_extract_yaml()
-#     yield
+@pytest.fixture(scope="session", autouse=True)
+def clear_extract_yaml():
+    YamlUtil().clear_extract_yaml()
+    yield
