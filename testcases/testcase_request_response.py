@@ -14,7 +14,7 @@ def case_request(case):
         if jsonpath.jsonpath(case, '$..url') and jsonpath.jsonpath(case, '$..method') \
                 and jsonpath.jsonpath(case, '$..data') and jsonpath.jsonpath(case, '$..headers'):
             allure.dynamic.title(case['name'])
-            readextract_and_replacevariables(case)
+            replace = readextract_and_replacevariables(case)
             title = case['name']
             headers = case['requests']['headers']
             url = case['requests']['url']
@@ -22,8 +22,8 @@ def case_request(case):
             method = case['requests']['method']
             request_result = RequestUtil().send_request_util(title, headers, url, data, method)
             res = json.loads(request_result)
-            if 'extract' in case:
-                extract_value = case['extract']
+            if 'extract' in replace:
+                extract_value = replace['extract']
                 regular_expression_extract(extract_value, request_result)
             return url
         else:
