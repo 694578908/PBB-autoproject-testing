@@ -37,6 +37,7 @@ class YamlUtil:
             else:
                 key_name_message = f'当前文件:{yaml_name}里的key没有被定义'
                 pytest.fail(key_name_message)
+
             return value
 
     # 清除extract.yml

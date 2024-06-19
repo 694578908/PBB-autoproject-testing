@@ -8,7 +8,7 @@ class RequestUtil:
     session = requests.session()
 
     # 发送请求
-    def send_request_util(self, method, url, data, headers, timeout_value=5, **kwargs):
+    def send_request_util(self, title, headers, url, data, method, timeout_value=5, **kwargs):
         method = str(method).lower()
         start_time = time.time()
         rep = None
