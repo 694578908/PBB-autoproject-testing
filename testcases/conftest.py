@@ -13,7 +13,6 @@ def read_config_redis_data():
     db = read_config_ini()['redis']['db']
     key = read_config_ini()['redis']['key']  # 需要自定义修改想要获取手机验证码
     data = (host, password, port, db, key)
-    print(host, password, port, db, key)
     return data
 
 

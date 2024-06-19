@@ -4,7 +4,7 @@ import pytest
 from common.read_write_yaml import YamlUtil
 
 
-def test_read_redis(read_config_redis_data):
+def read_redis(read_config_redis_data):
     host, password, port, db, key = read_config_redis_data
     redis_client = redis.StrictRedis(host=host, port=port, password=password, db=db, decode_responses=True)
     response = redis_client.ping()

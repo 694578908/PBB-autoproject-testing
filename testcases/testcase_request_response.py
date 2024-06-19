@@ -30,3 +30,4 @@ def case_request(case):
     else:
         case_key_message = 'yml一级关键字必须包含:name,requests,validate'
         pytest.fail(case_key_message)
+
