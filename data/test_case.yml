@@ -1,18 +1,18 @@
 login:
-- name: 登录账号密码
+- name: 输入手机号
   requests:
     method: get
     headers:
       Content-Type: application/json
       site: app
-    url: http://139.9.34.76:8930/applet/user/getCode?phone=15881086125
+    url: http://139.9.34.76:8930/applet/user/getCode?phone=15881086127
     data:
   storage:
-    mobile: '15881086125'
+    mobile: '15881086127'
   validate:
-    - equals: {code: 0}
+    code: 200
 
-- name: 手机号
+- name: 输入验证码
   requests:
     method: post
     headers:
@@ -31,4 +31,4 @@ login:
   extract:
     authorization: "token\":\"(.*?)\""
   validate:
-    - equals: {code: 0}
+    code: 200
