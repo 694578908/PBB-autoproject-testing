@@ -5,8 +5,10 @@ login:
     headers:
       Content-Type: application/json
       site: app
-    url: http://139.9.34.76:8930/applet/user/getCode?phone=15881086124
+    url: http://139.9.34.76:8930/applet/user/getCode?phone=15881086125
     data:
+  storage:
+    mobile: '15881086125'
   validate:
     - equals: {code: 0}
 
@@ -24,7 +26,9 @@ login:
       platform: "iOS"
       systemName: "iOS 17.5.1"
       code: ${code}
-      mobile: "15881086121"
+      mobile: ${mobile}
       parentUserId: ""
+  extract:
+    authorization: "token\":\"(.*?)\""
   validate:
     - equals: {code: 0}

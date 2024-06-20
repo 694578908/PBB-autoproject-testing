@@ -4,11 +4,11 @@ import pytest
 from common.read_write_yaml import YamlUtil
 from common.redis_extract_code import read_redis
 
-from testcases.testcase_request_response import case_request
+from common.testcase_request_response import case_request
 
 
 # 登录账号密码
-@allure.epic('PBB')
+@allure.epic('PBB-聘播播接口自动化测试')
 class TestRequest:
     @allure.feature('登录功能模块')
     @pytest.mark.parametrize('case', YamlUtil().read_testcase_yaml('test_case.yml', 'login'))
@@ -18,7 +18,3 @@ class TestRequest:
         host, password, port, db, key = read_config_redis_data
         if key in res:
             read_redis(read_config_redis_data)
-
-
-if __name__ == '__main__':
-    pytest.main()

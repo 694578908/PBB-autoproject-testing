@@ -23,5 +23,3 @@ def read_redis(read_config_redis_data):
         pytest.fail(error_message)
 
     redis_client.close()
-
-

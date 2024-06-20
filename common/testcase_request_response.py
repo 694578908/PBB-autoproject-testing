@@ -4,6 +4,7 @@ import allure
 import jsonpath
 import pytest
 
+from common.read_write_yaml import YamlUtil
 from common.regular_expression_method import regular_expression_extract
 from common.request_util import RequestUtil
 from common.variable_correlation_method import readextract_and_replacevariables
@@ -15,6 +16,9 @@ def case_request(case):
                 and jsonpath.jsonpath(case, '$..data') and jsonpath.jsonpath(case, '$..headers'):
             allure.dynamic.title(case['name'])
             replace = readextract_and_replacevariables(case)
+            if 'storage' in replace:
+                storage_value = replace['storage']
+                YamlUtil().write_extract_yaml(storage_value)
             title = case['name']
             headers = case['requests']['headers']
             url = case['requests']['url']
@@ -32,4 +36,3 @@ def case_request(case):
     else:
         case_key_message = 'yml一级关键字必须包含:name,requests,validate'
         pytest.fail(case_key_message)
-
