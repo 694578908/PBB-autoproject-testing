@@ -32,11 +32,13 @@ class RequestUtil:
         end_time = time.time()
         elapsed_time = end_time - start_time
         elapsed_time_rounded = round(elapsed_time, 2)
-        timeout_message = {'接口限制最大请求时间': timeout_value, '接口实际请求时间': elapsed_time_rounded}
+        timeout_message = f'接口限制最大请求时间: {timeout_value}, 接口实际请求时间: {elapsed_time_rounded}'
+        print(timeout_message)
 
         try:
             assert rep.status_code == 200
             code_message = f'接口响应成功, 请求耗时: {elapsed_time_rounded} 秒'
+            print(code_message)
         except AssertionError:
             code_message = f'接口响应失败, 请求耗时: {elapsed_time_rounded} 秒'
             pytest.fail(code_message)
