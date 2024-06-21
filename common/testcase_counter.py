@@ -15,4 +15,3 @@ def count(data):
 def colorize_text(text, style='\033[1m\033[31m'):
     end_style = '\033[0m'
     return style + text + end_style
-

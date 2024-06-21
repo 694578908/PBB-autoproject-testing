@@ -7,7 +7,7 @@ import pytest
 from common.read_write_yaml import YamlUtil
 from common.regular_expression_method import regular_expression_extract
 from common.request_util import RequestUtil
-from common.testcase_assertion_results import validate_response
+from common.testcase_assertion_results import assert_validate_response
 from common.testcase_counter import count
 from common.variable_correlation_method import readextract_and_replacevariables
 
@@ -20,8 +20,12 @@ def case_request(case):
             allure.dynamic.title(case['name'])
             replace = readextract_and_replacevariables(case)
             if 'storage' in replace:
-                storage_value = replace['storage']
-                YamlUtil().write_extract_yaml(storage_value)
+                if replace['storage'] is None:
+                    storage_messgae = f"用例storage字段必填，不能为空，如不需要storage可以直接删除"
+                    pytest.fail(storage_messgae)
+                else:
+                    storage_value = replace['storage']
+                    YamlUtil().write_extract_yaml(storage_value)
             title = case['name']
             headers = case['requests']['headers']
             url = case['requests']['url']
@@ -30,11 +34,13 @@ def case_request(case):
             request_result = RequestUtil().send_request_util(title, headers, url, data, method)
             res = json.loads(request_result)
             if 'extract' in replace:
-                extract_value = replace['extract']
-                regular_expression_extract(extract_value, request_result)
-
-            validate = replace['validate']
-            assert validate_response(validate, res)
+                if replace['extract'] is None:
+                    extract_message = f"用例extract字段必填，不能为空，如不需要extract可以直接删除"
+                    pytest.fail(extract_message)
+                else:
+                    extract_value = replace['extract']
+                    regular_expression_extract(extract_value, request_result)
+            assert_validate_response(replace, res)
             return url
 
         else:
