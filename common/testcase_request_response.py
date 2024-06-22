@@ -1,12 +1,11 @@
 import json
-
-import allure
 import jsonpath
 import pytest
 
 from common.read_write_yaml import YamlUtil
 from common.regular_expression_method import regular_expression_extract
 from common.request_util import RequestUtil
+from common.testcase_allure_reports import testcase_allure_title
 from common.testcase_assertion_results import assert_validate_response
 from common.testcase_counter import count
 from common.variable_correlation_method import readextract_and_replacevariables
@@ -17,7 +16,7 @@ def case_request(case):
     if 'name' in case.keys() and 'requests' in case.keys() and 'validate' in case.keys():
         if jsonpath.jsonpath(case, '$..url') and jsonpath.jsonpath(case, '$..method') \
                 and jsonpath.jsonpath(case, '$..data') and jsonpath.jsonpath(case, '$..headers'):
-            allure.dynamic.title(case['name'])
+            testcase_allure_title(case['name'])
             replace = readextract_and_replacevariables(case)
             if 'storage' in replace:
                 if replace['storage'] is None:

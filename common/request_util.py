@@ -1,39 +1,44 @@
+import allure
 import requests
 import time
 import json
 import pytest
+
+from common.testcase_allure_reports import testcase_allure_attach
 
 
 class RequestUtil:
     session = requests.session()
 
     # 发送请求
-    def send_request_util(self, title, headers, url, data, method, timeout_value=5, **kwargs):
+    def send_request_util(self, title, headers, url, data, method, max_timeout=5, **kwargs):
         method = str(method).lower()
         start_time = time.time()
         rep = None
-
+        request_data = data
         try:
             if method == 'get':
                 rep = RequestUtil.session.request(method=method, url=url, params=data, headers=headers,
-                                                  timeout=timeout_value, **kwargs)
+                                                  timeout=max_timeout, **kwargs)
             else:
-                data = json.dumps(data)
-                rep = RequestUtil.session.request(method=method, url=url, data=data, headers=headers,
-                                                  timeout=timeout_value, **kwargs)
+                res_data = json.dumps(request_data)
+                rep = RequestUtil.session.request(method=method, url=url, data=res_data, headers=headers,
+                                                  timeout=max_timeout, **kwargs)
+
         except requests.Timeout:
             end_time = time.time()
             elapsed_time = end_time - start_time
             elapsed_time_rounded = round(elapsed_time, 2)
-            timeout_message = {'接口限制最大请求时间': timeout_value, '接口实际请求时间': elapsed_time_rounded}
+            timeout_message = {'接口限制最大请求时间': max_timeout, '接口实际请求时间': elapsed_time_rounded}
             pytest.fail(f"接口超时: {timeout_message}")
             return
 
         end_time = time.time()
         elapsed_time = end_time - start_time
         elapsed_time_rounded = round(elapsed_time, 2)
-        timeout_message = f'接口限制最大请求时间: {timeout_value}, 接口实际请求时间: {elapsed_time_rounded}'
-        print(timeout_message)
+
+        testcase_allure_attach(max_timeout, elapsed_time_rounded, rep.request.method, rep.url, headers, rep,
+                               request_data)
 
         try:
             assert rep.status_code == 200

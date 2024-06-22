@@ -5,30 +5,31 @@ login:
     headers:
       Content-Type: application/json
       site: app
-    url: http://139.9.34.76:8930/applet/user/getCode?phone=15881086120
+    url: http://139.9.34.76:8930/applet/user/getCode?phone=15881086122
     data:
   storage:
-    mobile: '15881086120'
+    mobile: '15881086122'
+  validate:
+    code: 2000
+    msg: success
+
+- name: 输入验证码
+  requests:
+    method: post
+    headers:
+      Content-Type: application/json
+      Client: member
+    url: http://139.9.34.76:8930/applet/user/verificationLogin
+    data:
+      brand: "iPhone"
+      deviceId: "59AAC7B0-F77C-407F-988B-345CCA200D30"
+      model: "iPhone"
+      platform: "iOS"
+      systemName: "iOS 17.5.1"
+      code: ${code}
+      mobile: ${mobile}
+      parentUserId: ""
+  extract:
+    authorization: "token\":\"(.*?)\""
   validate:
     code: 200
-    msg: success
-#- name: 输入验证码
-#  requests:
-#    method: post
-#    headers:
-#      Content-Type: application/json
-#      Client: member
-#    url: http://139.9.34.76:8930/applet/user/verificationLogin
-#    data:
-#      brand: "iPhone"
-#      deviceId: "59AAC7B0-F77C-407F-988B-345CCA200D30"
-#      model: "iPhone"
-#      platform: "iOS"
-#      systemName: "iOS 17.5.1"
-#      code: ${code}
-#      mobile: ${mobile}
-#      parentUserId: ""
-#  extract:
-#    authorization: "token\":\"(.*?)\""
-#  validate:
-#    code: 200
