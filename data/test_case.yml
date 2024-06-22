@@ -5,13 +5,13 @@ login:
     headers:
       Content-Type: application/json
       site: app
-    url: http://139.9.34.76:8930/applet/user/getCode?phone=15881086122
+    url: http://139.9.34.76:8930/applet/user/getCode?phone=15881086123
     data:
   storage:
-    mobile: '15881086122'
+    mobile: '15881086123'
   validate:
-    code: 2000
-    msg: success
+    code1: 200
+    msg1: success
 
 - name: 输入验证码
   requests:

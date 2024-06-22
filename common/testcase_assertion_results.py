@@ -1,6 +1,9 @@
 import jsonpath
 import pytest
 
+from common.testcase_allure_reports import allure_error_message, allure_success_message, allure_validate_value_message, \
+    allure_None_message
+
 
 def assert_validate_response(replace, res):
     validate = replace['validate']
@@ -8,18 +11,18 @@ def assert_validate_response(replace, res):
         validate_message = f"yaml用例validate字段为必填，不能为空"
         pytest.fail(validate_message)
     else:
-        for key, expected_value in validate.items():
-            if expected_value is None:
-                expected_value_message = f"yaml用例validate.{key}的值为必填，不能为空"
-                pytest.fail(expected_value_message)
+        error_messages = []
+        for key, validate_value in validate.items():
+            if validate_value is None:
+                allure_None_message(key, error_messages)
             else:
                 actual_value = jsonpath.jsonpath(res, f'$..{key}')
                 if actual_value is False:
-                    error_message = f"用例断言失败：yaml用例validate里填写的：{key},与接口实际返回的{res}不一致"
-                    pytest.fail(error_message)
+                    allure_validate_value_message(key, error_messages, res)
                 else:
-                    if not actual_value or actual_value[0] != expected_value:
-                        error_message = f"用例断言失败: 期望 {key}:{expected_value},但实际为{key}:{actual_value}"
-                        pytest.fail(error_message)
-                    print(f"用例断言成功: 预期{key}:{expected_value} 实际{key}:{actual_value}")
+                    if not actual_value or actual_value[0] != validate_value:
+                        allure_error_message(key, validate_value, error_messages, actual_value)
+                    else:
+                        allure_success_message(key, validate_value, actual_value, res)
+
         return True
