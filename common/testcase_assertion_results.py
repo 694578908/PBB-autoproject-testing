@@ -2,14 +2,13 @@ import jsonpath
 import pytest
 
 from common.testcase_allure_reports import allure_error_message, allure_success_message, allure_validate_value_message, \
-    allure_None_message
+    allure_None_message, allure_validate_message
 
 
 def assert_validate_response(replace, res):
     validate = replace['validate']
     if validate is None:
-        validate_message = f"yaml用例validate字段为必填，不能为空"
-        pytest.fail(validate_message)
+        pytest.fail(allure_validate_message())
     else:
         error_messages = []
         for key, validate_value in validate.items():
