@@ -51,3 +51,15 @@ def allure_error_message(key, validate_value, error_messages, actual_value):
     actual_value_message = f" 期望 {key}:{validate_value},但实际为{key}:{actual_value}"
     error_messages.append(actual_value_message)
     allure.attach(actual_value_message, name=log_status)
+
+
+def allure_requesttime_success(status_code):
+    log_status = f'接口响应成功code:{status_code}'
+    code_message = f"code:{status_code}"
+    allure.attach(code_message, name=log_status)
+
+
+def allure_requesttime_fail(status_code):
+    log_status = f'接口响应失败code:{status_code}'
+    code_message = f"code:{status_code}"
+    allure.attach(code_message, name=log_status)

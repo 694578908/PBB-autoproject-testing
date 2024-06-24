@@ -4,7 +4,7 @@ import time
 import json
 import pytest
 
-from common.testcase_allure_reports import testcase_allure_attach
+from common.testcase_allure_reports import testcase_allure_attach, allure_requesttime_success, allure_requesttime_fail
 
 
 class RequestUtil:
@@ -42,10 +42,8 @@ class RequestUtil:
 
         try:
             assert rep.status_code == 200
-            code_message = f'接口响应成功, 请求耗时: {elapsed_time_rounded} 秒'
-            print(code_message)
+            allure_requesttime_success(rep.status_code)
         except AssertionError:
-            code_message = f'接口响应失败, 请求耗时: {elapsed_time_rounded} 秒'
-            pytest.fail(code_message)
+            pytest.fail(allure_requesttime_fail(rep.status_code))
 
         return rep.text
