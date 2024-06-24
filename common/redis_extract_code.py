@@ -2,6 +2,7 @@ import redis
 import pytest
 
 from common.read_write_yaml import YamlUtil
+from common.testcase_allure_reports import allure_redis_timeout, allure_redis_unresponsive, allure_redis_codeerror
 
 
 def read_redis(read_config_redis_data):
@@ -14,17 +15,12 @@ def read_redis(read_config_redis_data):
             full_key = folder_key + key
             full_key_value = redis_client.get(full_key)
             if full_key_value is None:
-                error_message = "未获取到验证码，请检查手机号输入是否正确（手机号切勿设置白名单）"
-                pytest.fail(error_message)
+                pytest.fail(allure_redis_codeerror(full_key, full_key_value))
             value = full_key_value.strip('""')
             data = {'code': value}
             YamlUtil().write_extract_yaml(data)
         else:
-            error_message = "Redis已连接但没有响应"
-            pytest.fail(error_message)
+            pytest.fail(allure_redis_unresponsive())
         redis_client.close()
     except redis.exceptions.ConnectionError:
-        timeout_error_message = "Redis连接超时，请检查连接配置和网络是否正常"
-        pytest.fail(timeout_error_message)
-
-
+        pytest.fail(allure_redis_timeout())
