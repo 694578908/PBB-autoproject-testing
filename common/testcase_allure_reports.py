@@ -10,6 +10,42 @@ def testcase_allure_title(name):
     allure.dynamic.title(name)
 
 
+def storage_key_messgae():
+    log_status = f"yaml用例storage目录下字段key为必填，不能为空，如不需要storage可以直接删除"
+    log.error(log_status)
+    allure.attach(log_status, name=log_status)
+
+
+def storage_value_messgae(storage_key, storage_value):
+    log_status = f'yaml用例storage目录下{storage_key}：{storage_value}值应必填，不能为空'
+    log.error(log_status)
+    allure.attach(name=log_status)
+
+
+def extract_key_message():
+    log_status = f"yaml用例extract目录下字段key为必填，不能为空，如不需要extract可以直接删除"
+    log.error(log_status)
+    allure.attach(name=log_status)
+
+
+def extract_value_message(extract_key, extract_value):
+    log_status = f'yaml用例extract目录下{extract_key}：{extract_value}值应为正则表达式，不能为空'
+    log.error(log_status)
+    allure.attach(name=log_status)
+
+
+def jsonpath_case_message():
+    log_status = '在yml文件requests目录下必须要有method,url,data,headers'
+    log.error(log_status)
+    allure.attach(name=log_status)
+
+
+def case_key_message():
+    log_status = 'yml一级关键字必须包含:name,requests,validate'
+    log.error(log_status)
+    allure.attach(name=log_status)
+
+
 # testcase_allure_reports.py：接口请求响应等参数的消息
 def testcase_allure_attach(title, max_timeout, elapsed_time_rounded, method, url, headers, rep, data):
     timeout_message = f'接口限制最大请求时间: {max_timeout}, 接口实际请求时间: {elapsed_time_rounded}'
@@ -38,10 +74,10 @@ def allure_success_message(key, validate_value, actual_value, res):
     log.info(log_status)
 
 
-def allure_validate_message():
+def allure_validate_message(validate):
     log_status = '用例断言失败'
-    allure.attach("yaml用例validate字段为必填，不能为空", name=log_status)
-    log.error('用例断言失败: yaml用例validate字段为必填，不能为空')
+    allure.attach(f"yaml用例{validate}字段为必填，不能为空", name=log_status)
+    log.error(f'用例断言失败: yaml用例{validate}字段为必填，不能为空')
 
 
 def allure_None_message(key, error_messages):

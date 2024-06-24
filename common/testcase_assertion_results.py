@@ -8,7 +8,7 @@ from common.testcase_allure_reports import allure_error_message, allure_success_
 def assert_validate_response(replace, res):
     validate = replace['validate']
     if validate is None:
-        pytest.fail(allure_validate_message())
+        pytest.fail(allure_validate_message(validate))
     else:
         error_messages = []
         for key, validate_value in validate.items():
