@@ -23,5 +23,7 @@ def assert_validate_response(replace, res):
                         allure_error_message(key, validate_value, error_messages, actual_value)
                     else:
                         allure_success_message(key, validate_value, actual_value, res)
+        if error_messages:
+            pytest.fail('\n'.join(error_messages))
 
         return True

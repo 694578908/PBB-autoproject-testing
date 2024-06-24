@@ -10,8 +10,8 @@ login:
   storage:
     mobile: '15881086123'
   validate:
-    code1: 200
-    msg1: success
+    code: 200
+    msg: success
 
 - name: 输入验证码
   requests:

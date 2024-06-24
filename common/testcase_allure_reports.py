@@ -47,7 +47,7 @@ def allure_validate_value_message(key, error_messages, res):
 
 
 def allure_error_message(key, validate_value, error_messages, actual_value):
-    log_status = '用例断言失败'
+    log_status = "用例断言失败"
     actual_value_message = f" 期望 {key}:{validate_value},但实际为{key}:{actual_value}"
     error_messages.append(actual_value_message)
     allure.attach(actual_value_message, name=log_status)
