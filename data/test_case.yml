@@ -5,10 +5,10 @@ login:
     headers:
       Content-Type: application/json
       site: app
-    url: http://139.9.34.76:8930/applet/user/getCode?phone=15881086123
+    url: http://139.9.34.76:8930/applet/user/getCode?phone=15881086124
     data:
   storage:
-    mobile: '15881086123'
+    mobile: '15881086124'
   validate:
     code: 200
     msg: success

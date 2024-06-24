@@ -37,7 +37,7 @@ class RequestUtil:
         elapsed_time = end_time - start_time
         elapsed_time_rounded = round(elapsed_time, 2)
 
-        testcase_allure_attach(max_timeout, elapsed_time_rounded, rep.request.method, rep.url, headers, rep,
+        testcase_allure_attach(title, max_timeout, elapsed_time_rounded, rep.request.method, rep.url, headers, rep,
                                request_data)
 
         try:

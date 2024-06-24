@@ -1,5 +1,6 @@
 import pytest
 
+from common.log_set import clear_logs
 from common.read_write_yaml import YamlUtil
 from common.readfile_config_path import read_config_ini
 
@@ -20,4 +21,13 @@ def read_config_redis_data():
 @pytest.fixture(scope="session", autouse=True)
 def clear_extract_yaml():
     YamlUtil().clear_extract_yaml()
+    yield
+
+
+# 定时清除log日志
+@pytest.fixture(scope="session", autouse=True)
+def clear_log():
+    # 设置过期时间（以小时为单位）
+    expiration_hours = int(read_config_ini()['log']['expiration_hours'])
+    clear_logs(expiration_hours)
     yield
