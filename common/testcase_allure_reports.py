@@ -35,13 +35,13 @@ def extract_value_message(extract_key, extract_value):
 
 
 def jsonpath_case_message():
-    log_status = '在yml文件requests目录下必须要有method,url,data,headers'
+    log_status = 'yaml用例requests二级目录下必须要有：method,url,data,headers'
     log.error(log_status)
     allure.attach(name=log_status)
 
 
 def case_key_message():
-    log_status = 'yml一级关键字必须包含:name,requests,validate'
+    log_status = 'yaml用例一级目录下必须要有:name,requests,validate'
     log.error(log_status)
     allure.attach(name=log_status)
 
@@ -74,10 +74,10 @@ def allure_success_message(key, validate_value, actual_value, res):
     log.info(log_status)
 
 
-def allure_validate_message(validate):
+def allure_validate_message():
     log_status = '用例断言失败'
-    allure.attach(f"yaml用例{validate}字段为必填，不能为空", name=log_status)
-    log.error(f'用例断言失败: yaml用例{validate}字段为必填，不能为空')
+    allure.attach(f"yaml用例validate目录下字段key为必填，不能为空", name=log_status)
+    log.error(f'用例断言失败: yaml用例validate目录下字段key为必填，不能为空')
 
 
 def allure_None_message(key, error_messages):
