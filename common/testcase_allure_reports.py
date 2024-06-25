@@ -12,37 +12,37 @@ def testcase_allure_title(name):
 
 def storage_key_messgae():
     log_status = f"yaml用例storage目录下字段key为必填，不能为空，如不需要storage可以直接删除"
-    log.error(log_status)
+    log.error(f"{log_status}")
     allure.attach(log_status, name=log_status)
 
 
 def storage_value_messgae(storage_key, storage_value):
     log_status = f'yaml用例storage目录下{storage_key}：{storage_value}值应必填，不能为空'
-    log.error(log_status)
+    log.error(f"{log_status}")
     allure.attach(name=log_status)
 
 
 def extract_key_message():
     log_status = f"yaml用例extract目录下字段key为必填，不能为空，如不需要extract可以直接删除"
-    log.error(log_status)
+    log.error(f"{log_status}")
     allure.attach(name=log_status)
 
 
 def extract_value_message(extract_key, extract_value):
     log_status = f'yaml用例extract目录下{extract_key}：{extract_value}值应为正则表达式，不能为空'
-    log.error(log_status)
+    log.error(f"{log_status}")
     allure.attach(name=log_status)
 
 
 def jsonpath_case_message():
     log_status = 'yaml用例requests二级目录下必须要有：method,url,data,headers'
-    log.error(log_status)
+    log.error(f"{log_status}")
     allure.attach(name=log_status)
 
 
 def case_key_message():
     log_status = 'yaml用例一级目录下必须要有:name,requests,validate'
-    log.error(log_status)
+    log.error(f"{log_status}")
     allure.attach(name=log_status)
 
 
@@ -71,7 +71,7 @@ def testcase_allure_attach(title, max_timeout, elapsed_time_rounded, method, url
 def allure_success_message(key, validate_value, actual_value, res):
     log_status = f'用例断言成功：预期{key}:{validate_value},实际{key}:{actual_value}'
     allure.attach(f'预期{key}:{validate_value},实际{res}', name=log_status)
-    log.info(log_status)
+    log.info(f"{log_status}")
 
 
 def allure_validate_message():
@@ -107,14 +107,14 @@ def allure_error_message(key, validate_value, error_messages, actual_value):
 # request_util.py:接口响应消息
 def allure_requesttime_success(status_code):
     log_status = f'接口响应成功code:{status_code}'
-    code_message = f"预期接口响应code:200"
+    code_message = '预期接口响应code:200'
     allure.attach(code_message, name=log_status)
-    log.info(code_message, log_status)
+    log.info(f"{code_message},{log_status} ")
 
 
 def allure_requesttime_fail(status_code):
     log_status = f'接口响应失败code:{status_code}'
-    code_message = f"预期接口响应code:200"
+    code_message = '预期接口响应code:200'
     allure.attach(code_message, name=log_status)
     log.error(f"{log_status}:{code_message}")
 

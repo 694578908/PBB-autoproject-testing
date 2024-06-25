@@ -42,6 +42,8 @@ PBB_backstage_login:
       Content-Type: application/json
     url: http://139.9.34.76:8940/code
     data:
+  extract:
+    code: "img\":\"(.*?)\""
   validate:
     code: 200
     msg: 操作成功
