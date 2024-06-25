@@ -22,4 +22,5 @@ TEST_CASE_DIR = os.path.join(BASE_PATH, 'testcases')
 
 # host相关
 
-HOST_GATEWAY="http://139.9.34.76:8930"
+app_HOST_GATEWAY="http://139.9.34.76:8930"
+web_HOST_GATEWA="http://139.9.34.76:8009/"
