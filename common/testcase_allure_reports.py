@@ -140,6 +140,7 @@ def allure_redis_timeout():
     log.error(f"{log_status}")
 
 
+# regular_expression_method.py的响应消息
 def allure_regular_expression(extracted_value, extract_key, extract_value, request_result):
     log_status = f"匹配结果为{extracted_value},请检查正则表达式是否填写正确{extract_key}：{extract_value}"
     request_result_message = f"该正则表达式：{extracted_value}与该结果进行匹配：{request_result}"

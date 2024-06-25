@@ -1,6 +1,7 @@
 from common.read_write_yaml import YamlUtil
 
 
+# 接口关联方法
 def readextract_and_replacevariables(case):
     extract_value = YamlUtil().read_testcase_yaml('extract.yml')
     if extract_value is None:
