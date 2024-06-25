@@ -19,6 +19,7 @@ def case_request(case):
                 and jsonpath.jsonpath(case, '$..data') and jsonpath.jsonpath(case, '$..headers'):
             testcase_allure_title(case['name'])
             replace = readextract_and_replacevariables(case)
+            # 判断replace.extract字段是否为空
             if 'storage' in replace:
                 if replace['storage'] is None:
                     pytest.fail(storage_key_messgae())
@@ -36,6 +37,7 @@ def case_request(case):
             method = case['requests']['method']
             request_result = RequestUtil().send_request_util(title, headers, url, data, method)
             res = json.loads(request_result)
+            # 判断replace.extract字段是否为空
             if 'extract' in replace:
                 if replace['extract'] is None:
                     pytest.fail(extract_key_message())
@@ -46,6 +48,7 @@ def case_request(case):
                         else:
                             extract_value = replace['extract']
                             regular_expression_extract(extract_value, request_result)
+            # 判断replace.validate是否为空并且与res返回结果做对比
             assert_validate_response(replace, res)
             return url
         else:
