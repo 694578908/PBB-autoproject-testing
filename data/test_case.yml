@@ -1,4 +1,4 @@
-login:
+PBB_login:
 - name: 输入手机号
   requests:
     method: get
@@ -33,3 +33,15 @@ login:
     authorization: "token\":\"(.*?)\""
   validate:
     code: 200
+
+PBB_backstage_login:
+- name: 获取图片验证码
+  requests:
+    method: get
+    headers:
+      Content-Type: application/json
+    url: http://139.9.34.76:8940/code
+    data:
+  validate:
+    code: 200
+    msg: 操作成功

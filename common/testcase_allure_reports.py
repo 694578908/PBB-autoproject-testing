@@ -107,14 +107,14 @@ def allure_error_message(key, validate_value, error_messages, actual_value):
 # request_util.py:接口响应消息
 def allure_requesttime_success(status_code):
     log_status = f'接口响应成功code:{status_code}'
-    code_message = f"code:{status_code}"
+    code_message = f"预期接口响应code:200"
     allure.attach(code_message, name=log_status)
-    log.info(f"{log_status}:{code_message}")
+    log.info(code_message, log_status)
 
 
 def allure_requesttime_fail(status_code):
     log_status = f'接口响应失败code:{status_code}'
-    code_message = f"code:{status_code}"
+    code_message = f"预期接口响应code:200"
     allure.attach(code_message, name=log_status)
     log.error(f"{log_status}:{code_message}")
 
