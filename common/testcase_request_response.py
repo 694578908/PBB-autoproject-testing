@@ -46,8 +46,9 @@ def case_request(case):
                         if extract_value is None:
                             pytest.fail(extract_value_message(extract_key, extract_value))
                         else:
-                            extract_value = replace['extract']
-                            regular_expression_extract(extract_value, request_result)
+                            extract_data = replace['extract']
+                            # 正则表达式进行匹配
+                            regular_expression_extract(extract_data, request_result)
             # 判断replace.validate是否为空并且与res返回结果做对比
             assert_validate_response(replace, res)
             return url
