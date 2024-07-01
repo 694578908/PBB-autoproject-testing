@@ -1,31 +1,31 @@
-import io
-import os
-from PIL import Image, ImageEnhance, ImageFilter
-from common.read_write_yaml import YamlUtil
-import base64
-from paddleocr import PaddleOCR
-
-
-def login_Image_recognition():
-    extract_data = YamlUtil().read_testcase_yaml('extract.yml')
-    for extract_key, extract_value in extract_data.items():
-        # 转换bytes格式数据
-        image_data = base64.b64decode(extract_value)
-        image = Image.open(io.BytesIO(image_data))
-        # 转换黑白图片
-        gray_image = image.convert('L')
-        width, height = gray_image.size
-        enlarged_image = gray_image.resize((width * 2, height * 2))
-        image_path = os.getcwd() + '/data/' + 'code_image.png'
-        enlarged_image.save(image_path)
-        # 初始化 PaddleOCR
-        ocr = PaddleOCR(use_angle_cls=True, lang='ch')  # 初始化OCR模型
-        result = ocr.ocr(image_path, cls=True)  # 识别图像
-        # 打印识别结果
-        for line in result:
-            # line 是一个包含检测结果的列表，每个元素包括文本框坐标和识别出的文本
-            for box, (text, confidence) in line:
-                print(f"识别出的文本: {text}, 置信度: {confidence}")
+# import io
+# import os
+# from PIL import Image, ImageEnhance, ImageFilter
+# from common.read_write_yaml import YamlUtil
+# import base64
+# from paddleocr import PaddleOCR
+#
+#
+# def login_Image_recognition():
+#     extract_data = YamlUtil().read_testcase_yaml('extract.yml')
+#     for extract_key, extract_value in extract_data.items():
+#         # 转换bytes格式数据
+#         image_data = base64.b64decode(extract_value)
+#         image = Image.open(io.BytesIO(image_data))
+#         # 转换黑白图片
+#         gray_image = image.convert('L')
+#         width, height = gray_image.size
+#         enlarged_image = gray_image.resize((width * 2, height * 2))
+#         image_path = os.getcwd() + '/data/' + 'code_image.png'
+#         enlarged_image.save(image_path)
+#         # 初始化 PaddleOCR
+#         ocr = PaddleOCR(use_angle_cls=True, lang='ch')  # 初始化OCR模型
+#         result = ocr.ocr(image_path, cls=True)  # 识别图像
+#         # 打印识别结果
+#         for line in result:
+#             # line 是一个包含检测结果的列表，每个元素包括文本框坐标和识别出的文本
+#             for box, (text, confidence) in line:
+#                 print(f"识别出的文本: {text}, 置信度: {confidence}")
 
 
 # def login_Image_recognition():
