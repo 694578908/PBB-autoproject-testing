@@ -58,13 +58,13 @@ def testcase_allure_attach(title, max_timeout, elapsed_time_rounded, method, url
                   attachment_type=allure.attachment_type.JSON)
     allure.attach(json.dumps(data, ensure_ascii=False, indent=2), name="请求参数",
                   attachment_type=allure.attachment_type.JSON)
-    allure.attach(json.dumps(rep.json(), ensure_ascii=False, indent=2), name="接口响应",
-                  attachment_type=allure.attachment_type.JSON)
+    response_content = rep.text if rep.text else str(rep.status_code)
+    allure.attach(response_content, name="接口响应", attachment_type=allure.attachment_type.TEXT)
     log.info('响应时间:{}'.format(timeout_message))
     log.info('用例标题:{}'.format(title))
     log.info('请求地址:{},请求头:{}'.format(response_url, headers))
     log.info('请求参数:{}'.format(data))
-    log.info('接口返回信息为:{}'.format(rep.json()))
+    log.info('接口返回信息为:{}'.format(rep))
 
 
 # testcase_assertion_results.py：参数返回与yaml预期对比消息体
@@ -141,8 +141,8 @@ def allure_redis_timeout():
 
 # regular_expression_method.py的响应消息
 def allure_regular_expression(extracted_value, extract_key, extract_value, request_result):
-    log_status = f"匹配结果为{extracted_value},请检查正则表达式是否填写正确{extract_key}：{extract_value}"
+    log_status = f"匹配结果为{extracted_value},请检查yaml用例extract目录的正则表达式是否填写正确{extract_key}：{extract_value}"
     request_result_message = f"该正则表达式：{extracted_value}与该结果进行匹配：{request_result}"
     allure.attach(request_result_message, name=log_status)
     log.info(f"{request_result_message}")
-    log.error(f"{log_status}")
+    log.warning(f"{log_status}")

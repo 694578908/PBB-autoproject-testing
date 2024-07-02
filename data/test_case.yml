@@ -35,15 +35,17 @@ PBB_login:
     code: 200
 
 PBB_backstage_login:
-- name: 获取图片验证码
+- name: 登录后台管理账号（当前接口Authorization为固定值）
   requests:
-    method: get
+    method: post
     headers:
       Content-Type: application/json
-    url: http://139.9.34.76:8940/code
+      Authorization: Basic bWFsbC1hZG1pbjoxMjM0NTY=
+    url: http://124.71.209.126:9701/auth/oauth/token
     data:
-  extract:
-    code: "img\":\"(.*?)\""
+      grantType: "PASSWORD"
+      passwordModel:
+        password: "pbbadmin123456"
+        username: "admin"
   validate:
     code: 200
-    msg: 操作成功

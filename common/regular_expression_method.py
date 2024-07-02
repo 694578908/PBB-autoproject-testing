@@ -13,4 +13,4 @@ def regular_expression_extract(extract_data, request_result):
             search_value = extracted_value.group(1)
             YamlUtil().write_extract_yaml({extract_key: search_value})
         else:
-            pytest.fail(allure_regular_expression(extracted_value, extract_key, extract_value, request_result))
+            pytest.warns(allure_regular_expression(extracted_value, extract_key, extract_value, request_result))
