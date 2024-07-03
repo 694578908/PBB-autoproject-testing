@@ -7,6 +7,7 @@ from common.log_set import log
 
 # testcase_request_response.py：标题
 def testcase_allure_title(name):
+    allure.dynamic.story(f'{name}接口')
     allure.dynamic.title(name)
 
 
