@@ -172,5 +172,5 @@ def key_name_NoneMessage():
 
 
 def YAMLError_exc_masssage(exc):
-    log_status = f'{exc}'
+    log_status = f'{exc},填写的yaml用例格式错误'
     log.error(log_status)
