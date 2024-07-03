@@ -43,7 +43,7 @@ class RequestUtil:
         try:
             assert rep.status_code == 200
             allure_requesttime_success(rep.status_code)
-        except AssertionError:
-            pytest.fail(allure_requesttime_fail(rep.status_code))
+        except AssertionError as e:
+            pytest.fail(allure_requesttime_fail(e, rep.status_code))
 
         return rep.text
