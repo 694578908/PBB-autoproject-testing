@@ -5,10 +5,10 @@ PBB_login:
     headers:
       Content-Type: application/json
       site: app
-    url: http://139.9.34.76:8930/applet/user/getCode?phone=15881086124
+    url: http://139.9.34.76:8930/applet/user/getCode?phone=15881086120
     data:
   storage:
-    mobile: '15881086124'
+    mobile: '15881086120'
   validate:
     code: 200
     msg: success

@@ -1,8 +1,9 @@
 import os
-
 import pytest
 import yaml
-import re
+
+from common.testcase_allure_reports import key_name_message, key_name_NoneMessage, yame_name_message, yaml_path_message, \
+    YAMLError_exc_masssage
 
 
 class YamlUtil:
@@ -22,26 +23,31 @@ class YamlUtil:
 
     # 读取extract.yml
     def read_extract_yaml(self, key):
-        with open(os.getcwd() + '/data/extract.yml', mode='r', encoding='utf-8')as f:
+        with open(os.getcwd() + '/data/' + key, mode='r', encoding='utf-8')as f:
             value = yaml.load(stream=f, Loader=yaml.FullLoader)
-            return value[key]
+            return value
 
     # 读取yml文件
     def read_testcase_yaml(self, yaml_name=None, key_name=None):
         if yaml_name is None:
-            yame_name_message = 'yaml_name文件名称不能为空'
-            pytest.fail(yame_name_message)
+            pytest.fail(yame_name_message(yaml_name))
 
         yaml_path = os.path.join(os.getcwd(), 'data', yaml_name)
         if not os.path.exists(yaml_path):
-            yaml_path_message = f'当前路径下:{yaml_path}没有该文件:{yaml_name}'
-            pytest.fail(yaml_path_message)
+            pytest.fail(yaml_path_message(yaml_path, yaml_name))
         with open(os.getcwd() + "/data/" + yaml_name, mode='r', encoding='utf-8')as f:
-            value = yaml.safe_load(stream=f)
-            if key_name:
-                print(f"Searching for key: {key_name}")
-                return value[key_name]
-            return value
+            try:
+                value = yaml.safe_load(stream=f)
+                if key_name is not None:
+                    if key_name in value:
+                        return value[key_name]
+                    else:
+                        pytest.fail(key_name_message(key_name, value))
+                else:
+                    pytest.warns(key_name_NoneMessage())
+                    return value
+            except yaml.YAMLError as exc:
+                YAMLError_exc_masssage(exc)
 
     # 清除extract.yml
     def clear_extract_yaml(self):

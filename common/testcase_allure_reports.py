@@ -147,3 +147,29 @@ def allure_regular_expression(extracted_value, extract_key, extract_value, reque
     allure.attach(request_result_message, name=log_status)
     log.info(f"{request_result_message}")
     log.warning(f"{log_status}")
+
+
+# read_write_yaml.py的报错消息
+def yame_name_message(yaml_name):
+    log_status = f'当前数据驱动read_testcase_yaml({yaml_name})不能为空'
+    log.error(log_status)
+
+
+def yaml_path_message(yaml_path, yaml_name):
+    log_status = f'当前路径下:{yaml_path}没有该文件:{yaml_name}'
+    log.error(log_status)
+
+
+def key_name_message(key_name, value):
+    log_status = f'{value}当前yaml用例里找不到名称为：{key_name}，请检查是否正确'
+    log.error(log_status)
+
+
+def key_name_NoneMessage():
+    log_status = f'警告：引用的装饰器→@pytest.mark.parametrize(参数名,参数值)为必填，如已填写当前提示可以忽略'
+    log.warning(f"{log_status}")
+
+
+def YAMLError_exc_masssage(exc):
+    log_status = f'{exc}'
+    log.error(log_status)
