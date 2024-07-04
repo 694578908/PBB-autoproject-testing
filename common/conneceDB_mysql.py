@@ -5,18 +5,11 @@
 # software: PyCharm
 
 
-
 import pymysql
 
-import pymysql
-
-# 替换以下参数为你的数据库信息
-host = '192.168.0.223'
-user = 'devuser'
-password = '123456Test'
-database = 'pbb-dev'  # 确保这里指定了数据库名称
 
 # 创建数据库连接
-connection = pymysql.connect(host=host, user=user, password=password, db=database)
-
-# 使用连接进行操作...
+def read_mysql(read_mysql_account):
+    # 调取封装账号
+    host, user, password, database = read_mysql_account
+    connection = pymysql.connect(host=host, user=user, password=password, db=database)

@@ -17,6 +17,26 @@ def read_config_redis_data():
     return data
 
 
+# 存放环境url地址
+@pytest.fixture(scope="session", autouse=True)
+def write_url_yaml():
+    login_url = read_config_ini()['url']['login_url']
+    module_url = read_config_ini()['url']['module_url']
+    url = {'login_url': login_url, 'module_url': module_url}
+    YamlUtil().write_extract_yaml(url)
+
+
+# 读取MySQL配置账号
+@pytest.fixture(scope="session", autouse=True)
+def read_mysql_account():
+    host = read_config_ini()['mysql']['host']
+    user = read_config_ini()['mysql']['user']
+    password = read_config_ini()['mysql']['password']
+    database = read_config_ini()['mysql']['database']
+    data = (host, user, password, database)
+    return data
+
+
 # 实时清除extract.yml
 @pytest.fixture(scope="session", autouse=True)
 def clear_extract_yaml():
