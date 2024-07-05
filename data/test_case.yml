@@ -30,7 +30,7 @@ PBB_login:
       mobile: ${mobile}
       parentUserId:
   extract:
-    authorization: "token\":\"(.*?)\""
+    Authorization: "token\":\"(.*?)\""
   validate:
     code: 200
 
@@ -91,6 +91,6 @@ PBB_backstage_login:
         password: "pbbadmin123456"
         username: "admin"
   extract:
-    PBB_authorization: "accessToken\":\"(.*?)\""
+    HT_Authorization: "accessToken\":\"(.*?)\""
   validate:
     code: 200
