@@ -1,7 +1,7 @@
 import json
 import jsonpath
 import pytest
-
+from common.Image_recognition_calculation import paddleocr_Image_recognition
 from common.read_write_yaml import YamlUtil
 from common.regular_expression_method import regular_expression_extract
 from common.request_util import RequestUtil
@@ -30,6 +30,7 @@ def case_request(case):
                         else:
                             storage_dict = replace['storage']
                             YamlUtil().write_extract_yaml(storage_dict)
+
             title = case['name']
             headers = case['requests']['headers']
             url = case['requests']['url']
@@ -46,9 +47,10 @@ def case_request(case):
                         if extract_value is None:
                             pytest.fail(extract_value_message(extract_key, extract_value))
                         else:
-                            extract_data = replace['extract']
                             # 正则表达式进行匹配
-                            regular_expression_extract(extract_data, request_result)
+                            regular_expression_extract(extract_key, extract_value, request_result)
+            if 'paddleocr' in replace:
+                paddleocr_Image_recognition()
             # 判断replace.validate是否为空并且与res返回结果做对比
             assert_validate_response(replace, res)
             return url

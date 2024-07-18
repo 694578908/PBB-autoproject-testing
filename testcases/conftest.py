@@ -20,9 +20,9 @@ def read_config_redis_data():
 # 存放环境url地址
 @pytest.fixture(scope="session", autouse=True)
 def write_url_yaml():
-    login_url = read_config_ini()['url']['login_url']
-    module_url = read_config_ini()['url']['module_url']
-    url = {'login_url': login_url, 'module_url': module_url}
+    login_url = read_config_ini()['url']['app_url']
+    module_url = read_config_ini()['url']['ht_url']
+    url = {'app_url': login_url, 'ht_url': module_url}
     YamlUtil().write_extract_yaml(url)
 
 

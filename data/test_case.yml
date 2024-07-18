@@ -4,8 +4,9 @@ PBB_login:
     method: get
     headers:
       Content-Type: application/json
+      authorization: Basic bWFsbC1hcHA6MTIzNDU2
       site: app
-    url: ${login_url}/applet/user/getCode?phone=15881086120
+    url: ${app_url}/applet/user/getCode?phone=15881086120
     data:
   storage:
     mobile: '15881086120'
@@ -18,16 +19,19 @@ PBB_login:
     headers:
       Content-Type: application/json
       site: app
-    url: ${login_url}/applet/user/verificationLogin
+      authorization: Basic bWFsbC1hcHA6MTIzNDU2
+    url: ${app_url}/auth/oauth/token
     data:
-      brand: iPhone
-      deviceId: 59AAC7B0-F77C-407F-988B-345CCA200D30
-      model: iPhone
-      platform: iOS
-      systemName: iOS 17.5.1
-      code: ${code}
-      mobile: ${mobile}
-      parentUserId:
+      smsModel:
+        brand: 'iPhone'
+        deviceId: 59AAC7B0-F77C-407F-988B-345CCA200D30
+        model: iPhone
+        platform: iOS
+        systemName: iOS 17.5.1
+        value: ${code}
+        mobile: ${mobile}
+        parentUserId: ""
+      grantType: "APP_SMS_CODE"
   extract:
     Authorization: "token\":\"(.*?)\""
   validate:
@@ -41,7 +45,7 @@ C_module:
       Content-Type: application/json
       site: app
       Authorization: ${Authorization}
-    url: ${module_url}/applet/position/list/v3
+    url: ${app_url}/applet/position/list/v3
     data:
       jobType: 1
       pageNum: 1
@@ -59,7 +63,7 @@ B_module:
       Content-Type: application/json
       site: app
       Authorization: ${Authorization}
-    url: ${module_url}/applet/enterprise/user/talentSquare/userList/v3
+    url: ${app_url}/applet/enterprise/user/talentSquare/userList/v3
     data:
       childrenId: 1401
       cityId: null
@@ -100,10 +104,33 @@ PBB_backstage_login:
     headers:
       Content-Type: application/json
       Authorization: Basic bWFsbC1hZG1pbjoxMjM0NTY=
-    url: ${module_url}/code
+    url: ${ht_url}/pbbmanage/code
     data:
   extract:
     Base64: "img\":\"(.*?)\""
+    uuid: "uuid\":\"(.*?)\""
+  paddleocr: paddleocr
+  validate:
+    code: 200
+
+- name: 登录后台管理账号
+  requests:
+    method: post
+    headers:
+      Content-Type: application/json
+      Authorization: Basic bWFsbC1hZG1pbjoxMjM0NTY=
+    url: ${ht_url}/pbbmanage/auth/oauth/token
+    data:
+      clientId: "mall-admin"
+      grantType: "CAPTCHA"
+      clientSecret: 123456
+      captchaModel:
+        password: pbbadmin123456
+        username: "admin"
+        verifyCodeKey: ${uuid}
+        verifyCodeValue: ${ht_code}
+  extract:
+    HT_Authorization: "accessToken\":\"(.*?)\""
   validate:
     code: 200
 

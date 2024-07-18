@@ -11,7 +11,7 @@ class RequestUtil:
     session = requests.session()
 
     # 发送请求
-    def send_request_util(self, title, headers, url, data, method, max_timeout=5, **kwargs):
+    def send_request_util(self, title, headers, url, data, method, max_timeout=5, proxies=None, **kwargs):
         method = str(method).lower()
         start_time = time.time()
         rep = None
@@ -19,7 +19,7 @@ class RequestUtil:
         try:
             if method == 'get':
                 rep = RequestUtil.session.request(method=method, url=url, params=data, headers=headers,
-                                                  timeout=max_timeout, **kwargs)
+                                                  timeout=max_timeout, proxies=proxies, **kwargs)
             else:
                 res_data = json.dumps(request_data)
                 rep = RequestUtil.session.request(method=method, url=url, data=res_data, headers=headers,

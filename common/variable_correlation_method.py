@@ -29,4 +29,10 @@ def readextract_and_replacevariables(case):
                     for new_key, new_value in extract_value.items():
                         if f"${{{new_key}}}" in value:
                             request['data'][key] = value.replace(f"${{{new_key}}}", str(new_value))
+                # 判断嵌套字典
+                if isinstance(value, dict):
+                    for new_key, new_value in extract_value.items():
+                        for value_key, value_value in value.items():
+                            if f"${{{new_key}}}" in value_value:
+                                request['data'][key][value_key] = value_value.replace(f"${{{new_key}}}", str(new_value))
     return case

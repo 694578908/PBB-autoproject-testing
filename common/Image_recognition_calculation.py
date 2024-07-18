@@ -67,5 +67,6 @@ def paddleocr_Image_recognition():
         # 打印所有计算结果
         for expression, calc_result in results:
             print(f"{expression} 等于 {calc_result}")
+            YamlUtil().write_extract_yaml({'ht_code': calc_result})
     else:
         print('图片不存在')
