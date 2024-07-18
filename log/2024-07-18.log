@@ -1258,3 +1258,63 @@
 [2024-07-18 19:08:37,742][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
 [2024-07-18 19:08:37,743][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
 [2024-07-18 19:08:37,745][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-18 19:17:19,360][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-18 19:17:19,752][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.39
+[2024-07-18 19:17:19,752][testcase_allure_reports.py 65][INFO]: 用例标题:输入手机号
+[2024-07-18 19:17:19,752][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: https://test.pinbobo.cn/applet/user/getCode?phone=15881086120,请求头:{'Content-Type': 'application/json', 'authorization': 'Basic bWFsbC1hcHA6MTIzNDU2', 'site': 'app'}
+[2024-07-18 19:17:19,752][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-18 19:17:19,752][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-18 19:17:19,752][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-18 19:17:19,753][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-18 19:17:20,009][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第2条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-18 19:17:20,099][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.09
+[2024-07-18 19:17:20,099][testcase_allure_reports.py 65][INFO]: 用例标题:输入验证码
+[2024-07-18 19:17:20,099][testcase_allure_reports.py 66][INFO]: 请求地址:method:POST, url: https://test.pinbobo.cn/auth/oauth/token,请求头:{'Content-Type': 'application/json', 'site': 'app', 'authorization': 'Basic bWFsbC1hcHA6MTIzNDU2'}
+[2024-07-18 19:17:20,100][testcase_allure_reports.py 67][INFO]: 请求参数:{'smsModel': {'brand': 'iPhone', 'deviceId': '59AAC7B0-F77C-407F-988B-345CCA200D30', 'model': 'iPhone', 'platform': 'iOS', 'systemName': 'iOS 17.5.1', 'value': '674518', 'mobile': '15881086120', 'parentUserId': ''}, 'grantType': 'APP_SMS_CODE'}
+[2024-07-18 19:17:20,100][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-18 19:17:20,100][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-18 19:17:20,103][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-18 19:17:20,107][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第3条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-18 19:17:20,266][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.16
+[2024-07-18 19:17:20,266][testcase_allure_reports.py 65][INFO]: 用例标题:首页-兼职列表
+[2024-07-18 19:17:20,267][testcase_allure_reports.py 66][INFO]: 请求地址:method:POST, url: https://test.pinbobo.cn/applet/position/list/v3,请求头:{'Content-Type': 'application/json', 'site': 'app', 'Authorization': 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTg3NzYiLCJ1c2VyX25hbWUiOiLpg5Hnp4vmnbAiLCJzY29wZSI6WyJhbGwiXSwibmlja25hbWUiOiLlsI_mkq05NjIxNzgiLCJ1c2VyX2tleSI6IjYxYzYyYTcyLWNmM2QtNDRjYS05OTI1LTAzOGRjZjFjZTNkYiIsImV4cCI6MTcyMTY2MTQzOSwidXNlciI6eyJ1c2VySWQiOjE4Nzc2LCJhdmF0YXIiOiJodHRwczovL3BiYmZyb250LmRvbmNnLmNvbS9hcHBsZXQvZW50ZXJwcmlzZS11c2VyLnBuZyIsInRva2VuIjpudWxsLCJuYW1lIjoi6YOR56eL5p2wIiwibmlja05hbWUiOiLlsI_mkq05NjIxNzgiLCJtb2JpbGUiOiIxNTg4MTA4NjEyMCIsIm9wZW5JZCI6Im9nby0tNi1Hek90MVNoNS02a2lNRTZWZ2pUSFkiLCJ0eXBlIjoyLCJjb21wYW55SWQiOjY1NywiaHJUeXBlIjoxLCJocklzRGlzYWJsZSI6MCwiaXNOZXciOm51bGwsImFjY291bnRTdGF0dXMiOjAsImJlYXJlciI6bnVsbH0sImp0aSI6ImZFdy1qWWtjNGFGSUFTNjJlLU5qY1JYbm9uTSIsImNsaWVudF9pZCI6Im1hbGwtYXBwIiwidXNlcm5hbWUiOiLpg5Hnp4vmnbAifQ.TPsmIA5SGRti6n_MSHeQDKg_bENDaPpqWOU_4PxEC48zW8Q-KRrq9JTuVfIIQ5KrcVXH4EQoSbcpdmagvp5oq1kanquE_-j9ZZ2Mp4oyS-bCJosGEhaNKgaaoEEaNTJrdC-ijITzWFG4LZvlO8O-kMD4QdTs5dzzFlQ8HLvr6fx1Rp6hPaNwBx_IyuQzTv6Skm5354-U6r9L_PKm5-6OMnMct7gkuA7rG6rEzaa4jkYwVeOROAmz0BR_I6yF2fOZZ_eyEfmLte8F3fm5Oy1dczNsac0fMPvpBNuoLh1Te760fNwH-1sLqJcYLBDXsQ1IFhVBaiEKCN_MxvfHSvqpJg'}
+[2024-07-18 19:17:20,267][testcase_allure_reports.py 67][INFO]: 请求参数:{'jobType': 1, 'pageNum': 1, 'pageSize': 12, 'isNew': None, 'isNear': None}
+[2024-07-18 19:17:20,267][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-18 19:17:20,267][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-18 19:17:20,274][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-18 19:17:20,278][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第4条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-18 19:17:20,407][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.12
+[2024-07-18 19:17:20,407][testcase_allure_reports.py 65][INFO]: 用例标题:首页-推荐列表（全部）
+[2024-07-18 19:17:20,408][testcase_allure_reports.py 66][INFO]: 请求地址:method:POST, url: https://test.pinbobo.cn/applet/enterprise/user/talentSquare/userList/v4,请求头:{'Content-Type': 'application/json', 'site': 'app', 'Authorization': 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTg3NzYiLCJ1c2VyX25hbWUiOiLpg5Hnp4vmnbAiLCJzY29wZSI6WyJhbGwiXSwibmlja25hbWUiOiLlsI_mkq05NjIxNzgiLCJ1c2VyX2tleSI6IjYxYzYyYTcyLWNmM2QtNDRjYS05OTI1LTAzOGRjZjFjZTNkYiIsImV4cCI6MTcyMTY2MTQzOSwidXNlciI6eyJ1c2VySWQiOjE4Nzc2LCJhdmF0YXIiOiJodHRwczovL3BiYmZyb250LmRvbmNnLmNvbS9hcHBsZXQvZW50ZXJwcmlzZS11c2VyLnBuZyIsInRva2VuIjpudWxsLCJuYW1lIjoi6YOR56eL5p2wIiwibmlja05hbWUiOiLlsI_mkq05NjIxNzgiLCJtb2JpbGUiOiIxNTg4MTA4NjEyMCIsIm9wZW5JZCI6Im9nby0tNi1Hek90MVNoNS02a2lNRTZWZ2pUSFkiLCJ0eXBlIjoyLCJjb21wYW55SWQiOjY1NywiaHJUeXBlIjoxLCJocklzRGlzYWJsZSI6MCwiaXNOZXciOm51bGwsImFjY291bnRTdGF0dXMiOjAsImJlYXJlciI6bnVsbH0sImp0aSI6ImZFdy1qWWtjNGFGSUFTNjJlLU5qY1JYbm9uTSIsImNsaWVudF9pZCI6Im1hbGwtYXBwIiwidXNlcm5hbWUiOiLpg5Hnp4vmnbAifQ.TPsmIA5SGRti6n_MSHeQDKg_bENDaPpqWOU_4PxEC48zW8Q-KRrq9JTuVfIIQ5KrcVXH4EQoSbcpdmagvp5oq1kanquE_-j9ZZ2Mp4oyS-bCJosGEhaNKgaaoEEaNTJrdC-ijITzWFG4LZvlO8O-kMD4QdTs5dzzFlQ8HLvr6fx1Rp6hPaNwBx_IyuQzTv6Skm5354-U6r9L_PKm5-6OMnMct7gkuA7rG6rEzaa4jkYwVeOROAmz0BR_I6yF2fOZZ_eyEfmLte8F3fm5Oy1dczNsac0fMPvpBNuoLh1Te760fNwH-1sLqJcYLBDXsQ1IFhVBaiEKCN_MxvfHSvqpJg'}
+[2024-07-18 19:17:20,408][testcase_allure_reports.py 67][INFO]: 请求参数:{'cityId': None, 'pageNum': 1, 'pageSize': 10, 'jobStatus': None, 'sex': None, 'workYear': None, 'educationType': None, 'trackIdList': None, 'showType': 2, 'queryType': 1}
+[2024-07-18 19:17:20,408][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-18 19:17:20,408][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-18 19:17:20,412][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-18 19:17:20,416][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第5条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-18 19:17:20,643][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.22
+[2024-07-18 19:17:20,643][testcase_allure_reports.py 65][INFO]: 用例标题:获取图片Base64
+[2024-07-18 19:17:20,643][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: https://testmanage.pinbobo.cn/pbbmanage/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-18 19:17:20,643][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-18 19:17:20,643][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-18 19:17:20,644][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-18 19:17:26,338][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-18 19:17:26,342][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第6条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-18 19:17:26,509][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.16
+[2024-07-18 19:17:26,509][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号
+[2024-07-18 19:17:26,509][testcase_allure_reports.py 66][INFO]: 请求地址:method:POST, url: https://testmanage.pinbobo.cn/pbbmanage/auth/oauth/token,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-18 19:17:26,509][testcase_allure_reports.py 67][INFO]: 请求参数:{'clientId': 'mall-admin', 'grantType': 'CAPTCHA', 'clientSecret': 123456, 'captchaModel': {'password': 'pbbadmin123456', 'username': 'admin', 'verifyCodeKey': '195c8e80636e45898932ef5324851db0', 'verifyCodeValue': '6'}}
+[2024-07-18 19:17:26,509][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-18 19:17:26,510][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-18 19:17:26,512][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]

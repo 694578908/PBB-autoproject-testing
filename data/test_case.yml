@@ -63,20 +63,18 @@ B_module:
       Content-Type: application/json
       site: app
       Authorization: ${Authorization}
-    url: ${app_url}/applet/enterprise/user/talentSquare/userList/v3
+    url: ${app_url}/applet/enterprise/user/talentSquare/userList/v4
     data:
-      childrenId: 1401
       cityId: null
-      key: recommendAll
       pageNum: 1
       pageSize: 10
-      parentId: 14
       jobStatus: null
       sex: null
       workYear: null
       educationType: null
-      liveTypeIdList: null
       trackIdList: null
+      showType: 2
+      queryType: 1
   validate:
     code: 200
 
