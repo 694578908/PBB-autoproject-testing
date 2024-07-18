@@ -505,3 +505,53 @@
 [2024-07-18 13:38:11,226][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
 [2024-07-18 13:38:11,227][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
 [2024-07-18 13:38:11,232][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-18 14:33:41,105][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-18 14:33:42,328][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 1.22
+[2024-07-18 14:33:42,328][testcase_allure_reports.py 65][INFO]: 用例标题:输入手机号
+[2024-07-18 14:33:42,328][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/applet/user/getCode?phone=15881086120,请求头:{'Content-Type': 'application/json', 'site': 'app'}
+[2024-07-18 14:33:42,328][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-18 14:33:42,328][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-18 14:33:42,329][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-18 14:33:42,329][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-18 14:33:42,618][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第2条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-18 14:33:43,681][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 1.06
+[2024-07-18 14:33:43,681][testcase_allure_reports.py 65][INFO]: 用例标题:输入验证码
+[2024-07-18 14:33:43,681][testcase_allure_reports.py 66][INFO]: 请求地址:method:POST, url: http://124.71.209.126:9701/applet/user/verificationLogin,请求头:{'Content-Type': 'application/json', 'site': 'app'}
+[2024-07-18 14:33:43,681][testcase_allure_reports.py 67][INFO]: 请求参数:{'brand': 'iPhone', 'deviceId': '59AAC7B0-F77C-407F-988B-345CCA200D30', 'model': 'iPhone', 'platform': 'iOS', 'systemName': 'iOS 17.5.1', 'code': '238048', 'mobile': '15881086120', 'parentUserId': None}
+[2024-07-18 14:33:43,681][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [404]>
+[2024-07-18 14:33:43,682][testcase_allure_reports.py 119][ERROR]: 
+[2024-07-18 14:33:43,682][testcase_allure_reports.py 120][ERROR]: 接口响应失败code:404:预期接口响应code:200
+[2024-07-18 14:33:43,888][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第3条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-18 14:33:45,265][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 1.37
+[2024-07-18 14:33:45,265][testcase_allure_reports.py 65][INFO]: 用例标题:首页-兼职列表
+[2024-07-18 14:33:45,266][testcase_allure_reports.py 66][INFO]: 请求地址:method:POST, url: http://124.71.209.126:9701/applet/position/list/v3,请求头:{'Content-Type': 'application/json', 'site': 'app', 'Authorization': '${Authorization}'}
+[2024-07-18 14:33:45,266][testcase_allure_reports.py 67][INFO]: 请求参数:{'jobType': 1, 'pageNum': 1, 'pageSize': 12, 'isNew': None, 'isNear': None}
+[2024-07-18 14:33:45,266][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-18 14:33:45,266][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-18 14:33:45,270][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-18 14:33:45,274][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第4条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-18 14:33:46,430][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 1.15
+[2024-07-18 14:33:46,430][testcase_allure_reports.py 65][INFO]: 用例标题:首页-推荐列表（全部）
+[2024-07-18 14:33:46,430][testcase_allure_reports.py 66][INFO]: 请求地址:method:POST, url: http://124.71.209.126:9701/applet/enterprise/user/talentSquare/userList/v3,请求头:{'Content-Type': 'application/json', 'site': 'app', 'Authorization': '${Authorization}'}
+[2024-07-18 14:33:46,430][testcase_allure_reports.py 67][INFO]: 请求参数:{'childrenId': 1401, 'cityId': None, 'key': 'recommendAll', 'pageNum': 1, 'pageSize': 10, 'parentId': 14, 'jobStatus': None, 'sex': None, 'workYear': None, 'educationType': None, 'liveTypeIdList': None, 'trackIdList': None}
+[2024-07-18 14:33:46,431][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-18 14:33:46,431][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-18 14:33:46,434][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-18 14:33:46,437][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第5条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-18 14:33:47,527][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 1.09
+[2024-07-18 14:33:47,527][testcase_allure_reports.py 65][INFO]: 用例标题:获取图片Base64
+[2024-07-18 14:33:47,527][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-18 14:33:47,527][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-18 14:33:47,527][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-18 14:33:47,528][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-18 14:33:47,532][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
