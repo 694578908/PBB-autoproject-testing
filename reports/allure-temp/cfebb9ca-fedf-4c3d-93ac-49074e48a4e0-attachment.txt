@@ -1,0 +1,10 @@
+INFO     root:testcase_counter.py:13 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第5条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+INFO     root:testcase_allure_reports.py:64 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.05
+INFO     root:testcase_allure_reports.py:65 用例标题:获取图片Base64
+INFO     root:testcase_allure_reports.py:66 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+INFO     root:testcase_allure_reports.py:67 请求参数:None
+INFO     root:testcase_allure_reports.py:68 接口返回信息为:<Response [200]>
+INFO     root:testcase_allure_reports.py:112 接口响应成功code:200 
+INFO     root:testcase_allure_reports.py:75 用例断言成功：预期code:200,实际code:[200]

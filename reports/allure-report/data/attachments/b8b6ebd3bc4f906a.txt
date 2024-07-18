@@ -1,0 +1,10 @@
+INFO     root:testcase_counter.py:13 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第2条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+INFO     root:testcase_allure_reports.py:64 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.16
+INFO     root:testcase_allure_reports.py:65 用例标题:输入验证码
+INFO     root:testcase_allure_reports.py:66 请求地址:method:POST, url: http://124.71.209.126:9701/applet/user/verificationLogin,请求头:{'Content-Type': 'application/json', 'site': 'app'}
+INFO     root:testcase_allure_reports.py:67 请求参数:{'brand': 'iPhone', 'deviceId': '59AAC7B0-F77C-407F-988B-345CCA200D30', 'model': 'iPhone', 'platform': 'iOS', 'systemName': 'iOS 17.5.1', 'code': '941506', 'mobile': '15881086120', 'parentUserId': None}
+INFO     root:testcase_allure_reports.py:68 接口返回信息为:<Response [404]>
+ERROR    root:testcase_allure_reports.py:119 
+ERROR    root:testcase_allure_reports.py:120 接口响应失败code:404:预期接口响应code:200

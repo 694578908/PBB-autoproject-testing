@@ -1,0 +1,783 @@
+[2024-07-17 17:20:32,127][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 17:20:32,236][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 17:20:32,236][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 17:20:32,237][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 17:20:32,237][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 17:20:32,237][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 17:20:32,237][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 17:20:32,238][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 17:48:00,731][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 17:48:02,834][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 2.1
+[2024-07-17 17:48:02,835][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 17:48:02,835][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 17:48:02,835][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 17:48:02,835][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 17:48:02,835][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 17:48:02,840][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 17:48:02,843][testcase_allure_reports.py 171][WARNING]: 警告：引用的装饰器→@pytest.mark.parametrize(参数名,参数值)为必填，如已填写当前提示可以忽略
+[2024-07-17 17:49:23,571][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 17:49:25,661][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 2.06
+[2024-07-17 17:49:25,663][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 17:49:25,664][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 17:49:25,665][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 17:49:25,667][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 17:49:25,669][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 17:49:25,689][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 17:49:25,752][testcase_allure_reports.py 171][WARNING]: 警告：引用的装饰器→@pytest.mark.parametrize(参数名,参数值)为必填，如已填写当前提示可以忽略
+[2024-07-17 17:50:19,748][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 17:50:21,214][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 1.43
+[2024-07-17 17:50:21,215][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 17:50:21,217][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 17:50:21,218][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 17:50:21,220][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 17:50:21,222][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 17:50:21,244][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 17:50:21,309][testcase_allure_reports.py 171][WARNING]: 警告：引用的装饰器→@pytest.mark.parametrize(参数名,参数值)为必填，如已填写当前提示可以忽略
+[2024-07-17 17:51:39,638][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 17:51:39,833][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.16
+[2024-07-17 17:51:39,835][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 17:51:39,836][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 17:51:39,837][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 17:51:39,838][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 17:51:39,841][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 17:51:39,862][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 17:52:49,652][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 17:52:49,825][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.14
+[2024-07-17 17:52:49,826][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 17:52:49,827][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 17:52:49,829][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 17:52:49,830][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 17:52:49,832][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 17:52:49,853][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 17:53:20,802][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 17:53:20,911][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 17:53:20,911][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 17:53:20,911][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 17:53:20,911][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 17:53:20,911][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 17:53:20,912][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 17:53:20,917][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 17:55:10,913][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 17:55:11,075][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.13
+[2024-07-17 17:55:11,076][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 17:55:11,078][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 17:55:11,079][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 17:55:11,080][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 17:55:11,082][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 17:55:11,103][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 17:56:32,586][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 17:56:32,689][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 17:56:32,689][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 17:56:32,689][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 17:56:32,689][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 17:56:32,689][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 17:56:32,690][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 17:56:32,694][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 17:58:23,969][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 17:58:24,100][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.13
+[2024-07-17 17:58:24,101][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 17:58:24,101][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 17:58:24,101][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 17:58:24,101][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 17:58:24,101][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 17:58:24,106][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 17:58:56,666][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 17:58:56,768][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 17:58:56,768][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 17:58:56,768][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 17:58:56,768][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 17:58:56,768][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 17:58:56,769][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 17:58:56,774][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:00:45,710][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:00:45,828][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 18:00:45,828][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:00:45,828][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:00:45,828][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:00:45,828][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:00:45,828][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:00:45,833][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:01:38,276][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:01:38,399][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.12
+[2024-07-17 18:01:38,399][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:01:38,399][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:01:38,399][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:01:38,399][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:01:38,399][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:01:38,404][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:02:05,907][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:02:06,012][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 18:02:06,012][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:02:06,012][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:02:06,012][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:02:06,012][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:02:06,012][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:02:06,018][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:02:51,054][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:02:51,156][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 18:02:51,156][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:02:51,156][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:02:51,156][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:02:51,156][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:02:51,156][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:02:51,161][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:06:27,354][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:06:27,539][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.15
+[2024-07-17 18:06:27,540][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:06:27,541][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:06:27,543][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:06:27,544][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:06:27,546][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:06:27,567][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:26:37,843][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:26:38,024][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.15
+[2024-07-17 18:26:38,025][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:26:38,027][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:26:38,028][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:26:38,029][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:26:38,032][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:26:38,054][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:29:00,248][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:29:00,350][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 18:29:00,350][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:29:00,350][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:29:00,350][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:29:00,350][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:29:00,350][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:29:00,355][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:29:12,850][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:29:12,963][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 18:29:12,963][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:29:12,963][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:29:12,963][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:29:12,963][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:29:12,964][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:29:12,968][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:32:59,210][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:33:01,191][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 1.98
+[2024-07-17 18:33:01,191][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:33:01,191][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:33:01,191][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:33:01,191][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:33:01,191][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:33:01,196][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:43:19,562][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:43:19,670][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 18:43:19,670][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:43:19,670][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:43:19,670][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:43:19,671][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:43:19,671][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:43:19,677][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:43:44,900][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:43:45,027][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.12
+[2024-07-17 18:43:45,027][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:43:45,027][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:43:45,027][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:43:45,028][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:43:45,028][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:43:45,033][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:45:12,749][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:45:12,878][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.13
+[2024-07-17 18:45:12,878][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:45:12,878][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:45:12,879][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:45:12,879][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:45:12,879][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:45:12,884][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:46:36,801][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:46:36,912][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 18:46:36,912][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:46:36,912][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:46:36,912][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:46:36,912][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:46:36,913][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:46:36,918][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:47:09,076][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:47:09,177][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 18:47:09,177][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:47:09,177][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:47:09,177][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:47:09,177][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:47:09,178][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:47:09,183][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:47:21,904][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:47:22,002][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 18:47:22,002][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:47:22,002][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:47:22,002][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:47:22,003][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:47:22,003][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:47:22,008][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:48:09,390][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:48:09,500][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 18:48:09,500][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:48:09,501][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:48:09,501][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:48:09,501][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:48:09,501][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:48:09,506][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:48:36,528][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:48:36,634][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 18:48:36,634][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:48:36,634][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:48:36,634][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:48:36,634][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:48:36,635][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:48:36,640][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 18:49:04,144][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 18:49:04,246][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 18:49:04,246][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 18:49:04,246][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 18:49:04,246][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 18:49:04,246][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 18:49:04,247][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 18:49:04,251][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 19:55:25,413][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 19:55:25,528][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 19:55:25,528][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 19:55:25,528][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 19:55:25,528][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 19:55:25,529][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 19:55:25,529][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 19:55:25,534][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 19:59:40,308][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 19:59:40,471][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.13
+[2024-07-17 19:59:40,474][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 19:59:40,477][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 19:59:40,480][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 19:59:40,484][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 19:59:40,488][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 19:59:40,512][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 20:04:05,261][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 20:04:05,449][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.15
+[2024-07-17 20:04:05,450][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 20:04:05,451][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 20:04:05,453][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 20:04:05,454][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 20:04:05,456][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 20:04:05,479][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 20:16:12,714][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 20:16:12,837][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.12
+[2024-07-17 20:16:12,838][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 20:16:12,838][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 20:16:12,838][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 20:16:12,838][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 20:16:12,838][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 20:16:12,844][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 20:18:38,078][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 20:18:38,243][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.13
+[2024-07-17 20:18:38,244][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 20:18:38,246][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 20:18:38,247][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 20:18:38,248][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 20:18:38,251][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 20:18:38,272][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 20:19:10,352][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 20:19:10,533][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.15
+[2024-07-17 20:19:10,534][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 20:19:10,535][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 20:19:10,537][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 20:19:10,538][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 20:19:10,540][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 20:19:10,562][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 20:23:05,269][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 20:23:05,449][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.15
+[2024-07-17 20:23:05,450][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 20:23:05,451][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 20:23:05,453][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 20:23:05,454][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 20:23:05,456][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 20:23:05,478][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 20:25:52,254][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 20:25:52,358][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 20:25:52,358][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 20:25:52,358][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 20:25:52,358][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 20:25:52,358][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 20:25:52,359][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 20:25:52,364][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 20:26:55,636][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 20:26:55,808][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.13
+[2024-07-17 20:26:55,810][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 20:26:55,812][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 20:26:55,813][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 20:26:55,815][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 20:26:55,818][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 20:26:55,839][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 20:27:44,883][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 20:27:45,082][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.15
+[2024-07-17 20:27:45,083][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 20:27:45,084][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 20:27:45,086][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 20:27:45,087][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 20:27:45,090][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 20:27:45,118][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 20:29:22,331][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 20:29:22,447][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 20:29:22,447][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 20:29:22,447][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 20:29:22,447][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 20:29:22,447][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 20:29:22,448][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 20:29:22,453][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 20:31:47,329][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 20:31:47,437][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 20:31:47,437][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 20:31:47,437][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 20:31:47,437][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 20:31:47,437][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 20:31:47,438][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 20:31:47,445][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 20:55:56,993][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 20:55:57,110][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 20:55:57,110][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 20:55:57,111][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 20:55:57,111][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 20:55:57,111][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 20:55:57,111][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 20:55:57,116][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 20:58:16,999][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 20:58:17,106][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 20:58:17,106][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 20:58:17,106][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 20:58:17,107][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 20:58:17,107][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 20:58:17,107][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 20:58:17,112][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 20:59:42,282][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 20:59:42,379][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.09
+[2024-07-17 20:59:42,379][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 20:59:42,380][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 20:59:42,380][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 20:59:42,380][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 20:59:42,380][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 20:59:42,385][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:00:21,800][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:00:21,928][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.12
+[2024-07-17 21:00:21,928][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:00:21,928][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:00:21,928][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:00:21,928][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:00:21,928][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:00:21,932][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:04:16,158][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:04:16,272][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 21:04:16,273][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:04:16,273][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:04:16,273][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:04:16,273][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:04:16,273][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:04:16,278][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:04:56,668][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:04:56,788][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 21:04:56,788][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:04:56,788][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:04:56,788][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:04:56,788][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:04:56,789][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:04:56,793][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:06:59,092][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:06:59,212][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.12
+[2024-07-17 21:06:59,212][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:06:59,212][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:06:59,212][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:06:59,213][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:06:59,213][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:06:59,219][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:07:42,701][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:07:42,831][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.13
+[2024-07-17 21:07:42,831][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:07:42,832][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:07:42,832][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:07:42,832][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:07:42,832][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:07:42,837][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:08:32,955][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:08:33,062][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 21:08:33,062][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:08:33,062][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:08:33,062][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:08:33,063][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:08:33,063][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:08:33,068][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:09:31,312][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:09:31,417][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 21:09:31,418][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:09:31,418][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:09:31,418][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:09:31,418][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:09:31,418][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:09:31,423][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:11:29,332][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:11:29,507][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.14
+[2024-07-17 21:11:29,509][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:11:29,510][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:11:29,511][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:11:29,513][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:11:29,515][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:11:29,538][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:12:46,836][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:12:46,946][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 21:12:46,946][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:12:46,946][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:12:46,946][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:12:46,946][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:12:46,947][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:12:46,954][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:13:30,299][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:13:30,423][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.12
+[2024-07-17 21:13:30,423][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:13:30,423][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:13:30,423][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:13:30,423][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:13:30,424][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:13:30,431][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:16:43,004][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:16:43,104][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.09
+[2024-07-17 21:16:43,104][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:16:43,104][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:16:43,104][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:16:43,104][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:16:43,105][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:16:43,110][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:21:42,750][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:21:42,865][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 21:21:42,865][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:21:42,865][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:21:42,865][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:21:42,865][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:21:42,866][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:21:42,871][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:23:17,467][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:23:17,573][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 21:23:17,573][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:23:17,573][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:23:17,573][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:23:17,573][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:23:17,573][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:23:17,578][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:24:37,701][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:24:37,829][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.12
+[2024-07-17 21:24:37,829][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:24:37,829][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:24:37,829][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:24:37,829][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:24:37,830][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:24:37,835][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:27:49,662][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:27:49,758][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.09
+[2024-07-17 21:27:49,758][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:27:49,758][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:27:49,758][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:27:49,758][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:27:49,759][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:27:49,763][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:30:43,293][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:30:43,404][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 21:30:43,404][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:30:43,405][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:30:43,405][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:30:43,405][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:30:43,405][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:30:43,410][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:38:37,086][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:38:37,191][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 21:38:37,192][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:38:37,192][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:38:37,192][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:38:37,192][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:38:37,192][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:38:37,197][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:40:15,673][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:40:15,769][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.09
+[2024-07-17 21:40:15,769][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:40:15,769][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:40:15,769][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:40:15,769][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:40:15,770][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:40:15,775][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:41:41,269][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:41:41,373][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 21:41:41,374][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:41:41,374][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:41:41,374][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:41:41,374][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:41:41,374][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:41:41,380][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:42:20,326][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:42:20,508][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.14
+[2024-07-17 21:42:20,509][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:42:20,511][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:42:20,512][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:42:20,514][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:42:20,516][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:42:20,546][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:46:00,322][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:46:00,481][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.12
+[2024-07-17 21:46:00,483][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:46:00,484][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:46:00,486][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:46:00,487][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:46:00,490][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:46:00,512][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:47:16,008][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:47:16,131][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.12
+[2024-07-17 21:47:16,131][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:47:16,131][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:47:16,131][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:47:16,131][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:47:16,131][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:47:16,136][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:47:49,926][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:47:50,018][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.09
+[2024-07-17 21:47:50,019][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:47:50,019][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:47:50,019][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:47:50,019][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:47:50,019][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:47:50,024][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:53:54,066][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:53:54,178][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 21:53:54,179][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:53:54,179][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:53:54,179][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:53:54,179][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:53:54,179][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:53:54,184][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:55:00,710][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:55:00,833][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.12
+[2024-07-17 21:55:00,833][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:55:00,833][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:55:00,833][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:55:00,833][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:55:00,834][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:55:00,838][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:55:42,369][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:55:42,482][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 21:55:42,482][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:55:42,482][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:55:42,482][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:55:42,482][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:55:42,482][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:55:42,488][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:57:22,995][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:57:23,100][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 21:57:23,100][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:57:23,100][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:57:23,100][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:57:23,100][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:57:23,100][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:57:23,106][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:57:57,244][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:57:57,374][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 21:57:57,374][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:57:57,374][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:57:57,374][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:57:57,374][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:57:57,375][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:57:57,380][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:58:56,803][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:58:56,928][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.12
+[2024-07-17 21:58:56,928][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:58:56,928][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:58:56,928][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:58:56,928][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:58:56,928][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:58:56,933][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:59:14,820][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:59:14,920][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 21:59:14,920][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:59:14,920][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:59:14,920][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:59:14,920][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:59:14,921][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:59:14,926][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 21:59:52,251][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 21:59:52,352][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 21:59:52,352][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 21:59:52,352][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 21:59:52,352][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 21:59:52,352][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 21:59:52,353][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 21:59:52,358][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 22:00:27,100][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 22:00:27,232][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.13
+[2024-07-17 22:00:27,232][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 22:00:27,232][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 22:00:27,232][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 22:00:27,232][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 22:00:27,233][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 22:00:27,237][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 22:01:19,072][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 22:01:19,180][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.11
+[2024-07-17 22:01:19,180][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 22:01:19,181][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 22:01:19,181][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 22:01:19,181][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 22:01:19,181][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 22:01:19,186][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
+[2024-07-17 22:02:02,902][testcase_counter.py 13][INFO]: 
+[33m[1m>>>>>>>>>>>>>>>>>>>>执行第1条用例>>>>>>>>>>>>>>>>>>>>[0m
+
+[2024-07-17 22:02:03,002][testcase_allure_reports.py 64][INFO]: 响应时间:接口限制最大请求时间: 5, 接口实际请求时间: 0.1
+[2024-07-17 22:02:03,002][testcase_allure_reports.py 65][INFO]: 用例标题:登录后台管理账号（当前接口Authorization为固定值）
+[2024-07-17 22:02:03,002][testcase_allure_reports.py 66][INFO]: 请求地址:method:GET, url: http://124.71.209.126:9701/code,请求头:{'Content-Type': 'application/json', 'Authorization': 'Basic bWFsbC1hZG1pbjoxMjM0NTY='}
+[2024-07-17 22:02:03,003][testcase_allure_reports.py 67][INFO]: 请求参数:None
+[2024-07-17 22:02:03,003][testcase_allure_reports.py 68][INFO]: 接口返回信息为:<Response [200]>
+[2024-07-17 22:02:03,003][testcase_allure_reports.py 112][INFO]: 接口响应成功code:200 
+[2024-07-17 22:02:03,008][testcase_allure_reports.py 75][INFO]: 用例断言成功：预期code:200,实际code:[200]
