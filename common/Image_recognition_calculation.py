@@ -7,7 +7,7 @@ import cv2
 import re
 from common.read_write_yaml import YamlUtil
 
-dd
+
 def paddleocr_Image_recognition():
     extract_data = YamlUtil().read_testcase_yaml('extract.yml', 'Base64')
     # for extract_key, extract_value in extract_data:
