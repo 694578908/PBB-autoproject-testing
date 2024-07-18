@@ -5,7 +5,7 @@
 # software: PyCharm
 
 import os
-
+import random
 
 # 当前绝对路径
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))

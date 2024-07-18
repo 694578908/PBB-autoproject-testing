@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from common.Image_recognition_calculation import paddleocr_Image_recognition
 from common.read_write_yaml import YamlUtil
 from common.redis_extract_code import read_redis
 
@@ -34,4 +35,4 @@ class TestBackground:
     @pytest.mark.parametrize('case', YamlUtil().read_testcase_yaml('test_case.yml', 'PBB_backstage_login'))
     def test_case_backstage_login(self, case):
         case_request(case)
-        # login_Image_recognition()
+        paddleocr_Image_recognition()
