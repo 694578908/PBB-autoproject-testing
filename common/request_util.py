@@ -51,7 +51,7 @@ class RequestUtil:
                 return rep.text
             else:
                 request_timeout_message(max_timeout, elapsed_time_rounded)
-                pytest.fail(request_NONE_message())
+                pytest.fail(request_NONE_message())1
         except AssertionError as e:
 
             pytest.fail(allure_requesttime_fail(e, rep.status_code))
