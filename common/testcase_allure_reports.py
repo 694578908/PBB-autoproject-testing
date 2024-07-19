@@ -5,7 +5,7 @@ import allure
 from common.log_set import log
 
 
-# testcase_request_response.py：标题
+# testcase_request_response.py
 def testcase_allure_title(name):
     allure.dynamic.story(f'{name}接口')
     allure.dynamic.title(name)
@@ -47,7 +47,7 @@ def case_key_message():
     allure.attach(name=log_status)
 
 
-# testcase_allure_reports.py：接口请求响应等参数的消息
+# request_util.py：接口请求响应等参数的消息
 def testcase_allure_attach(title, max_timeout, elapsed_time_rounded, method, url, headers, rep, data):
     timeout_message = f'接口限制最大请求时间: {max_timeout}, 接口实际请求时间: {elapsed_time_rounded}'
     response_url = f'method:{method}, url: {url}'
@@ -106,10 +106,34 @@ def allure_error_message(key, validate_value, error_messages, actual_value):
 
 
 # request_util.py:接口响应消息
+def requests_exceptions_ProxyError(e):
+    log_status = f"代理错误: {e}"
+    allure.attach(log_status, name='网络连接异常')
+    log.error(f"{log_status} ")
+
+
+def requests_exceptions_RequestException(e):
+    log_status = f"请求异常: {e}"
+    allure.attach(log_status, name='网络连接异常')
+    log.error(f"{log_status} ")
+
+
 def allure_requesttime_success(status_code):
     log_status = f'接口响应成功code:{status_code}'
     allure.attach(log_status, name=log_status)
     log.info(f"{log_status} ")
+
+
+def request_timeout_message(max_timeout, elapsed_time_rounded):
+    log_status = f'接口限制最大请求时间: {max_timeout}, 接口实际请求时间: {elapsed_time_rounded}'
+    allure.attach(log_status, name='接口响应超时')
+    log.error(f"{log_status} ")
+
+
+def request_NONE_message():
+    log_status = "请求返回的响应对象为空"
+    allure.attach(f'{log_status}：None ', name=log_status)
+    log.error(f"{log_status}：None ")
 
 
 def allure_requesttime_fail(e, status_code):
@@ -176,14 +200,15 @@ def YAMLError_exc_masssage(exc):
     log.error(log_status)
 
 
+# Image_recognition_calculation：报错消息
 def ocr_recerror_message():
-    log_status = ('图片无法识别，请重新请求')
+    log_status = '图片无法识别，请重新请求'
     log.info(log_status)
     allure.attach(name=log_status)
 
 
 def ocr_rec_message(text, confidence):
-    log_status = (f"识别出的文本: {text}, 置信度: {confidence}")
+    log_status = f"识别出的文本: {text}, 置信度: {confidence}"
     log.info(log_status)
     allure.attach(log_status, name='验证码图片识别成功')
 
@@ -195,12 +220,12 @@ def ocr_error_massage(text):
 
 
 def ocr_success_message(expression, calc_result):
-    log_status = (f"{expression} 等于 {calc_result}")
+    log_status = f"{expression} 等于 {calc_result}"
     log.info(log_status)
     allure.attach(log_status, name='识别成功')
 
 
 def imaga_error_massage(img_path):
-    log_status = (f'该路径：{img_path}图片不存在')
+    log_status = f'该路径：{img_path}图片不存在'
     log.error(log_status)
     allure.attach(log_status, name='无法找到图片')

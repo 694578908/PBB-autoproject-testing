@@ -4,7 +4,8 @@ import time
 import json
 import pytest
 
-from common.testcase_allure_reports import testcase_allure_attach, allure_requesttime_success, allure_requesttime_fail
+from common.testcase_allure_reports import testcase_allure_attach, allure_requesttime_success, allure_requesttime_fail, \
+    requests_exceptions_ProxyError, requests_exceptions_RequestException, request_timeout_message, request_NONE_message
 
 
 class RequestUtil:
@@ -29,22 +30,30 @@ class RequestUtil:
             end_time = time.time()
             elapsed_time = end_time - start_time
             elapsed_time_rounded = round(elapsed_time, 2)
-            timeout_message = {'接口限制最大请求时间': max_timeout, '接口实际请求时间': elapsed_time_rounded}
-            pytest.fail(f"接口超时: {timeout_message}")
-            return
+            request_timeout_message(max_timeout, elapsed_time_rounded)
 
-        end_time = time.time()
-        elapsed_time = end_time - start_time
-        elapsed_time_rounded = round(elapsed_time, 2)
+        except requests.exceptions.ProxyError as e:
+            requests_exceptions_ProxyError(e)
 
-        testcase_allure_attach(title, max_timeout, elapsed_time_rounded, rep.request.method, rep.url, headers, rep,
-                               request_data)
+        except requests.RequestException as e:
+            requests_exceptions_RequestException(e)
 
         try:
-            assert rep.status_code == 200
-            allure_requesttime_success(rep.status_code)
+            end_time = time.time()
+            elapsed_time = end_time - start_time
+            elapsed_time_rounded = round(elapsed_time, 2)
+            if rep:
+                testcase_allure_attach(title, max_timeout, elapsed_time_rounded, rep.request.method, rep.url, headers, rep,
+                                       request_data)
+
+                assert rep.status_code == 200
+                allure_requesttime_success(rep.status_code)
+                return rep.text
+            else:
+                request_timeout_message(max_timeout, elapsed_time_rounded)
+                pytest.fail(request_NONE_message())
         except AssertionError as e:
 
             pytest.fail(allure_requesttime_fail(e, rep.status_code))
 
-        return rep.text
+
