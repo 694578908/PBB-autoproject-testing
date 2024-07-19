@@ -2,9 +2,11 @@ import io
 import os
 from PIL import Image, ImageEnhance, ImageFilter
 import base64
+
+from common.testcase_allure_reports import ocr_error_massage, ocr_success_message, imaga_error_massage, ocr_rec_message, \
+    ocr_recerror_message
 from paddleocr.paddleocr import PaddleOCR
-import cv2
-import re
+import cv2, re, pytest
 from common.read_write_yaml import YamlUtil
 
 
@@ -32,7 +34,10 @@ def paddleocr_Image_recognition():
         )
         img = cv2.imread(img_path)
         enlarged_image = cv2.resize(img, (0, 0), fx=3, fy=3)
-        result = ocr.ocr(enlarged_image)  # 识别图像
+        try:
+            result = ocr.ocr(enlarged_image)  # 识别图像
+        except Exception as result:
+            ocr_recerror_message()
         # 打印识别结果
         # for line in result[0]:
         #     text = line[1][0]
@@ -41,10 +46,10 @@ def paddleocr_Image_recognition():
         for line in result:
             # line 是一个包含检测结果的列表，每个元素包括文本框坐标和识别出的文本
             for box, (text, confidence) in line:
-                print(f"识别出的文本: {text}, 置信度: {confidence}")
+                ocr_rec_message(text, confidence)
                 match = re.search(r'(\d+)\s*([\+\-\*\/])\s*(\d+)', text)
                 if not match:
-                    print("未能识别有效的运算表达式")
+                    pytest.fail(ocr_error_massage(text))
                     continue
                 num1 = int(match.group(1))
                 operator = match.group(2)
@@ -59,14 +64,14 @@ def paddleocr_Image_recognition():
                 elif operator == '/':
                     calc_result = num1 / num2
                 else:
-                    print("无法识别的运算符")
+                    pytest.fail(ocr_error_massage(text))
                     continue
 
-                results.append((text, calc_result))
+                results.append((text, int(calc_result)))
 
         # 打印所有计算结果
         for expression, calc_result in results:
-            print(f"{expression} 等于 {calc_result}")
+            ocr_success_message(expression, calc_result)
             YamlUtil().write_extract_yaml({'ht_code': calc_result})
     else:
-        print('图片不存在')
+        pytest.fail(imaga_error_massage(img_path))

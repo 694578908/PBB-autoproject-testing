@@ -174,3 +174,33 @@ def key_name_NoneMessage():
 def YAMLError_exc_masssage(exc):
     log_status = f'{exc},填写的yaml用例格式错误'
     log.error(log_status)
+
+
+def ocr_recerror_message():
+    log_status = ('图片无法识别，请重新请求')
+    log.info(log_status)
+    allure.attach(name=log_status)
+
+
+def ocr_rec_message(text, confidence):
+    log_status = (f"识别出的文本: {text}, 置信度: {confidence}")
+    log.info(log_status)
+    allure.attach(log_status, name='验证码图片识别成功')
+
+
+def ocr_error_massage(text):
+    log_status = f'识别结果为:{text}→未能识别有效的运算表达式'
+    log.error(log_status)
+    allure.attach(log_status, name='验证码图片识别成功')
+
+
+def ocr_success_message(expression, calc_result):
+    log_status = (f"{expression} 等于 {calc_result}")
+    log.info(log_status)
+    allure.attach(log_status, name='识别成功')
+
+
+def imaga_error_massage(img_path):
+    log_status = (f'该路径：{img_path}图片不存在')
+    log.error(log_status)
+    allure.attach(log_status, name='无法找到图片')

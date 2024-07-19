@@ -22,10 +22,11 @@ class YamlUtil:
             yaml.dump(data=data, stream=f, allow_unicode=True)
 
     # 创建文件夹
-    def create_dir(self, dir_name, ):
+    def create_dir(self, dir_name):
         dir_path = os.path.join(os.getcwd(), dir_name)
         if not os.path.exists(dir_path):
             os.mkdir(dir_name)
+        return dir_path
 
     # 读取extract.yml
     def read_extract_yaml(self, key):
