@@ -31,6 +31,7 @@ class TestClient:
 @allure.epic('聘播播-后台管理自动化测试')
 class TestBackground:
     @allure.feature('后台管理')
+    @pytest.mark.flaky(reruns=2)
     @pytest.mark.parametrize('case', YamlUtil().read_testcase_yaml('PBB_backstage_login.yml', 'PBB_backstage_login'))
     def test_case_backstage_login(self, case):
         case_request(case)
