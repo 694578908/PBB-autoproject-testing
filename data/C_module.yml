@@ -1,0 +1,17 @@
+C_module:
+- name: 首页-兼职列表
+  requests:
+    method: post
+    headers:
+      Content-Type: application/json
+      site: app
+      Authorization: ${Authorization}
+    url: ${app_url}/applet/position/list/v3
+    data:
+      jobType: 1
+      pageNum: 1
+      pageSize: 12
+      isNew: null
+      isNear: null
+  validate:
+    code: 200

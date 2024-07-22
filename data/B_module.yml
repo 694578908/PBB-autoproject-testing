@@ -1,0 +1,22 @@
+B_module:
+- name: 首页-推荐列表（全部）
+  requests:
+    method: post
+    headers:
+      Content-Type: application/json
+      site: app
+      Authorization: ${Authorization}
+    url: ${app_url}/applet/enterprise/user/talentSquare/userList/v4
+    data:
+      cityId: null
+      pageNum: 1
+      pageSize: 10
+      jobStatus: null
+      sex: null
+      workYear: null
+      educationType: null
+      trackIdList: null
+      showType: 2
+      queryType: 1
+  validate:
+    code: 200

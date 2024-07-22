@@ -1,0 +1,53 @@
+PBB_backstage_login:
+#- name: 登录后台管理账号（当前接口Authorization为固定值）
+#  requests:
+#    method: post
+#    headers:
+#      Content-Type: application/json
+#      Authorization: Basic bWFsbC1hZG1pbjoxMjM0NTY=
+#    url: ${module_url}/auth/oauth/token
+#    data:
+#      grantType: "PASSWORD"
+#      passwordModel:
+#        password: "pbbadmin123456"
+#        username: "admin"
+#  extract:
+#    HT_Authorization: "accessToken\":\"(.*?)\""
+#  validate:
+#    code: 200
+
+- name: 获取图片Base64
+  requests:
+    method: get
+    headers:
+      Content-Type: application/json
+      Authorization: Basic bWFsbC1hZG1pbjoxMjM0NTY=
+    url: ${ht_url}/pbbmanage/code
+    data:
+  extract:
+    Base64: "img\":\"(.*?)\""
+    uuid: "uuid\":\"(.*?)\""
+  paddleocr: paddleocr
+  validate:
+    code: 200
+
+- name: 登录后台管理账号
+  requests:
+    method: post
+    headers:
+      Content-Type: application/json
+      Authorization: Basic bWFsbC1hZG1pbjoxMjM0NTY=
+    url: ${ht_url}/pbbmanage/auth/oauth/token
+    data:
+      clientId: "mall-admin"
+      grantType: "CAPTCHA"
+      clientSecret: 123456
+      captchaModel:
+        password: pbbadmin123456
+        username: "admin"
+        verifyCodeKey: ${uuid}
+        verifyCodeValue: ${ht_code}
+  extract:
+    HT_Authorization: "accessToken\":\"(.*?)\""
+  validate:
+    code: 200

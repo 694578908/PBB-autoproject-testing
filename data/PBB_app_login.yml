@@ -1,0 +1,38 @@
+PBB_app_login:
+- name: 输入手机号
+  requests:
+    method: get
+    headers:
+      Content-Type: application/json
+      authorization: Basic bWFsbC1hcHA6MTIzNDU2
+      site: app
+    url: ${app_url}/applet/user/getCode?phone=15881086120
+    data:
+  storage:
+    mobile: '15881086120'
+  validate:
+    code: 200
+
+- name: 输入验证码
+  requests:
+    method: post
+    headers:
+      Content-Type: application/json
+      site: app
+      authorization: Basic bWFsbC1hcHA6MTIzNDU2
+    url: ${app_url}/auth/oauth/token
+    data:
+      smsModel:
+        brand: 'iPhone'
+        deviceId: 59AAC7B0-F77C-407F-988B-345CCA200D30
+        model: iPhone
+        platform: iOS
+        systemName: iOS 17.5.1
+        value: ${code}
+        mobile: ${mobile}
+        parentUserId: ""
+      grantType: "APP_SMS_CODE"
+  extract:
+    Authorization: "token\":\"(.*?)\""
+  validate:
+    code: 200
