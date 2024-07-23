@@ -1,7 +1,6 @@
 import os
 import pytest
 import yaml
-
 from common.testcase_allure_reports import key_name_message, key_name_NoneMessage, yame_name_message, yaml_path_message, \
     YAMLError_exc_masssage
 
@@ -57,6 +56,6 @@ class YamlUtil:
                 YAMLError_exc_masssage(exc)
 
     # 清除extract.yml
-    def clear_extract_yaml(self):
-        with open(os.getcwd() + "/data/extract.yml", mode='w', encoding='utf-8')as f:
+    def clear_extract_yaml(self, yaml_name):
+        with open(os.getcwd() + "/data/" + yaml_name, mode='w', encoding='utf-8')as f:
             f.truncate()

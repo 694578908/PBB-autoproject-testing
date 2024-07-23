@@ -39,7 +39,7 @@ def read_mysql_account():
 # 实时清除extract.yml
 @pytest.fixture(scope="session", autouse=True)
 def clear_extract_yaml():
-    YamlUtil().clear_extract_yaml()
+    YamlUtil().clear_extract_yaml('extract.yml')
     yield
 
 
@@ -50,6 +50,3 @@ def clear_log():
     expiration_hours = int(read_config_ini()['log']['expiration_hours'])
     clear_logs(expiration_hours)
     yield
-
-
-

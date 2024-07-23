@@ -6,7 +6,7 @@ current_test_case = []
 
 
 # 定义计数器
-def count(data, case_name):
+def count(case_name):
     global counter, current_test_case
     separator = '>' * 20
     if case_name not in rerun_counter:
@@ -21,7 +21,6 @@ def count(data, case_name):
         print_data = f"\n{yellow_text}\n"
 
     log.info(print_data)
-    return data
 
 
 # 红色字体并加粗
