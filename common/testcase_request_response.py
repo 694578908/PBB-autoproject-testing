@@ -13,7 +13,8 @@ from common.variable_correlation_method import readextract_and_replacevariables
 
 
 def case_request(case):
-    count(case)
+    case_name = case.get('name', 'unknown_case_name')
+    count(case, case_name)
     if 'name' in case.keys() and 'requests' in case.keys() and 'validate' in case.keys():
         if jsonpath.jsonpath(case, '$..url') and jsonpath.jsonpath(case, '$..method') \
                 and jsonpath.jsonpath(case, '$..data') and jsonpath.jsonpath(case, '$..headers'):

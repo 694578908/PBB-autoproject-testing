@@ -1,5 +1,4 @@
 import pytest
-
 from common.log_set import clear_logs
 from common.read_write_yaml import YamlUtil
 from common.readfile_config_path import read_config_ini
@@ -51,3 +50,6 @@ def clear_log():
     expiration_hours = int(read_config_ini()['log']['expiration_hours'])
     clear_logs(expiration_hours)
     yield
+
+
+
