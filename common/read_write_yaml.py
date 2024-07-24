@@ -33,7 +33,7 @@ class YamlUtil:
             value = yaml.load(stream=f, Loader=yaml.FullLoader)
             return value
 
-    # 读取yml文件
+    # 读取data的yml文件
     def read_testcase_yaml(self, yaml_name=None, key_name=None):
         if yaml_name is None:
             pytest.fail(yame_name_message(yaml_name))
@@ -42,6 +42,27 @@ class YamlUtil:
         if not os.path.exists(yaml_path):
             pytest.fail(yaml_path_message(yaml_path, yaml_name))
         with open(os.getcwd() + "/data/" + yaml_name, mode='r', encoding='utf-8')as f:
+            try:
+                value = yaml.safe_load(stream=f)
+                if key_name is not None:
+                    if key_name in value:
+                        return value[key_name]
+                    else:
+                        pytest.fail(key_name_message(key_name, value))
+                else:
+                    pytest.warns(key_name_NoneMessage())
+                    return value
+            except yaml.YAMLError as exc:
+                YAMLError_exc_masssage(exc)
+
+    def read_testcase_data_yaml(self, yaml_name=None, key_name=None):
+        if yaml_name is None:
+            pytest.fail(yame_name_message(yaml_name))
+
+        yaml_path = os.path.join(os.getcwd(), 'testcases_data', yaml_name)
+        if not os.path.exists(yaml_path):
+            pytest.fail(yaml_path_message(yaml_path, yaml_name))
+        with open(os.getcwd() + "/testcases_data/" + yaml_name, mode='r', encoding='utf-8')as f:
             try:
                 value = yaml.safe_load(stream=f)
                 if key_name is not None:
