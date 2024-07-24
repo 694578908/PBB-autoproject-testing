@@ -7,6 +7,8 @@ def readextract_and_replacevariables(case):
     if extract_value is None:
         return case
     for case_key, case_vlaue in case.items():
+        if case_vlaue is None:
+            continue
         request = case_vlaue
         # 遍历URL里的value是否有${{{}}}并且替换
         if 'url' in request and isinstance(request['url'], str):

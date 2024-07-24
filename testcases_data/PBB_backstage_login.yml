@@ -27,7 +27,7 @@ PBB_backstage_login:
   extract:
     Base64: "img\":\"(.*?)\""
     uuid: "uuid\":\"(.*?)\""
-  paddleocr: paddleocr
+  paddleocr:
   validate:
     code: 200
 
