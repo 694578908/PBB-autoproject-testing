@@ -55,5 +55,3 @@ class RequestUtil:
         except AssertionError as e:
 
             pytest.fail(allure_requesttime_fail(e, rep.status_code))
-
-

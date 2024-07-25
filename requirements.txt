@@ -16,4 +16,23 @@ redis~=5.0.1
 colorama==0.4.4
 Pillow ==9.5.0
 pymysql
-opencv-python
+shapely
+scikit-image
+imgaug
+pyclipper
+lmdb
+tqdm
+numpy
+visualdl
+rapidfuzz
+opencv-python<=4.6.0.66
+opencv-contrib-python<=4.6.0.66
+cython
+premailer
+openpyxl
+attrdict
+PyMuPDF<1.21.0
+python-docx
+fonttools>=4.24.0
+fire>=0.3.0
+pdf2docx
