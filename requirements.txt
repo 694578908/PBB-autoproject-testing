@@ -5,8 +5,8 @@ pytest-xdist
 pytest-ordering
 pytest-rerunfailures
 allure-pytest
-jsonpath~=0.82.2
-PyYAML~=6.0.1
+jsonpath
+PyYAML
 pytest-logger
 pytest-ini
 beautifulsoup4==4.10.0
@@ -22,11 +22,11 @@ imgaug
 pyclipper
 lmdb
 tqdm
-numpy==1.21.6
+numpy
 visualdl
 rapidfuzz
-opencv-python<=4.6.0.66
-opencv-contrib-python<=4.6.0.66
+opencv-python<=4.10.0.84
+opencv-contrib-python<=4.10.0.86
 cython
 premailer
 openpyxl
