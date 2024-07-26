@@ -3,7 +3,27 @@ import sys, os
 from common.log_set import log
 
 
+def is_pip_installed():
+    try:
+        result = subprocess.run(['pip', '--version'], capture_output=True, text=True, check=True)
+        version_info = result.stdout.strip()
+        return version_info
+    except subprocess.CalledProcessError as e:
+        # 捕获命令执行错误
+        log.error(f"检测 pip 失败，返回码: {e.returncode}")
+        return None
+    except FileNotFoundError:
+        # 捕获文件未找到错误
+        log.error("pip 未安装或命令不可用")
+        return None
+
+
 def install_module(module_name):
+    version_info = is_pip_installed()
+    if not version_info:
+        log.info("pip 未安装")
+        return False
+    log.info(f"pip 已安装，版本信息: {version_info}")
     try:
         subprocess.check_call([sys.executable, "-m", "pip", "install", module_name])
         installed_version = pkg_resources.get_distribution(module_name).version
