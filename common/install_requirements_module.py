@@ -24,8 +24,9 @@ def install_module(module_name):
         log.info("pip 未安装")
         return False
     log.info(f"pip 已安装，版本信息: {version_info}")
+    source_url = 'https://pypi.tuna.tsinghua.edu.cn/simple'
     try:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", module_name])
+        subprocess.check_call([sys.executable, "-m", "pip", "install", module_name, '-i', source_url])
         installed_version = pkg_resources.get_distribution(module_name).version
         log.info(f"{module_name}=={installed_version}模块已成功安装")
 
