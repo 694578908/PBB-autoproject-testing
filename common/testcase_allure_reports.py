@@ -200,6 +200,21 @@ def YAMLError_exc_masssage(exc):
     log.error(log_status)
 
 
+def dirpath_None_massage(yaml_path):
+    log_status = f"当前目录 {yaml_path} 不存在或不是一个目录"
+    log.error(log_status)
+
+
+def dir_None_massage(yaml_path):
+    log_status = f"当前{yaml_path}目录里没有文件"
+    log.error(log_status)
+
+
+def yaml_None_massage(yaml_name):
+    log_status = f"文件 '{yaml_name}' 内容为空。"
+    log.error(log_status)
+
+
 # Image_recognition_calculation：报错消息
 def ocr_recerror_message():
     log_status = '图片无法识别，请重新请求'

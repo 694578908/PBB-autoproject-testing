@@ -1,4 +1,3 @@
-B_module:
 - name: 首页-推荐列表（全部）
   requests:
     method: post
