@@ -14,8 +14,8 @@ PBB_app_login:
   validate:
     code: 200
 
-- title: 客户端-用户登陆
-  name: 输入验证码
+- module: 客户端-用户登陆
+  title: 输入验证码
   requests:
     method: post
     headers:

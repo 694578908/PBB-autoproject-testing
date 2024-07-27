@@ -42,7 +42,7 @@ def jsonpath_case_message():
 
 
 def case_key_message():
-    log_status = 'yaml用例一级目录下必须要有:title,name,requests,validate'
+    log_status = 'yaml用例一级目录下必须要有:module,title,requests,validate'
     log.error(f"{log_status}")
     allure.attach(name=log_status)
 
