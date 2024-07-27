@@ -13,7 +13,7 @@ def count(case_name):
         counter += 1
         rerun_counter[case_name] = 0
         current_test_case = counter
-        yellow_text = f"\033[33m\033[1m{separator} 执行第{current_test_case}条用例 - {case_name}{separator} \033[0m"
+        yellow_text = f"\n\033[33m\033[1m{separator} 执行第{current_test_case}条用例 - {case_name}{separator} \033[0m"
         print_data = f"\n{yellow_text}\n"
     else:
         rerun_counter[case_name] += 1  # 增加该用例的重跑次数
