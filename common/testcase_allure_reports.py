@@ -6,8 +6,8 @@ from common.log_set import log
 
 
 # testcase_request_response.py
-def testcase_allure_title(name):
-    allure.dynamic.story(f'{name}接口')
+def testcase_allure_title(module, name):
+    allure.dynamic.story(module)
     allure.dynamic.title(name)
 
 
@@ -42,13 +42,13 @@ def jsonpath_case_message():
 
 
 def case_key_message():
-    log_status = 'yaml用例一级目录下必须要有:name,requests,validate'
+    log_status = 'yaml用例一级目录下必须要有:title,name,requests,validate'
     log.error(f"{log_status}")
     allure.attach(name=log_status)
 
 
 # request_util.py：接口请求响应等参数的消息
-def testcase_allure_attach(title, max_timeout, elapsed_time_rounded, method, url, headers, rep, data):
+def testcase_allure_attach(module, title, max_timeout, elapsed_time_rounded, method, url, headers, rep, data):
     timeout_message = f'接口限制最大请求时间: {max_timeout}, 接口实际请求时间: {elapsed_time_rounded}'
     response_url = f'method:{method}, url: {url}'
     allure.attach(json.dumps(timeout_message, ensure_ascii=False, indent=2), name="接口响应时间",
@@ -62,6 +62,7 @@ def testcase_allure_attach(title, max_timeout, elapsed_time_rounded, method, url
     response_content = rep.text if rep.text else str(rep.status_code)
     allure.attach(response_content, name="接口响应", attachment_type=allure.attachment_type.TEXT)
     log.info('响应时间:{}'.format(timeout_message))
+    log.info('用例模块:{}'.format(module))
     log.info('用例标题:{}'.format(title))
     log.info('请求地址:{},请求头:{}'.format(response_url, headers))
     log.info('请求参数:{}'.format(data))

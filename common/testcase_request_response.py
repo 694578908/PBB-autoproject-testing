@@ -13,11 +13,11 @@ from common.variable_correlation_method import readextract_and_replacevariables
 
 
 def case_request(case):
-    count(case.get('name'))
-    if 'name' in case.keys() and 'requests' in case.keys() and 'validate' in case.keys():
+    count(case.get('title'))
+    if 'module' in case.keys() and 'title' in case.keys() and 'requests' in case.keys() and 'validate' in case.keys():
         if jsonpath.jsonpath(case, '$..url') and jsonpath.jsonpath(case, '$..method') \
                 and jsonpath.jsonpath(case, '$..data') and jsonpath.jsonpath(case, '$..headers'):
-            testcase_allure_title(case['name'])
+            testcase_allure_title(case['module'], case['title'])
             replace = readextract_and_replacevariables(case)
             # 判断replace.extract字段是否为空
             if 'storage' in replace:
@@ -30,13 +30,13 @@ def case_request(case):
                         else:
                             storage_dict = replace['storage']
                             YamlUtil().write_extract_yaml(storage_dict)
-
-            title = case['name']
+            title = case['module']
+            name = case['title']
             headers = case['requests']['headers']
             url = case['requests']['url']
             data = case['requests']['data']
             method = case['requests']['method']
-            request_result = RequestUtil().send_request_util(title, headers, url, data, method)
+            request_result = RequestUtil().send_request_util(title, name, headers, url, data, method)
             res = json.loads(request_result)
             # 判断replace.extract字段是否为空
             if 'extract' in replace:

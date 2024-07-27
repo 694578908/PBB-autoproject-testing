@@ -3,7 +3,7 @@ import os
 from common.testcase_allure_reports import dir_None_massage
 
 
-def read_config_ini(path="./config/config.ini"):
+def read_config_ini(path="./config/config_test.ini"):
     abs_path = os.path.abspath(path)
     if os.path.isfile(abs_path):
         config = configparser.ConfigParser()

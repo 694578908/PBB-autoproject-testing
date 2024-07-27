@@ -1,22 +1,6 @@
 PBB_backstage_login:
-#- name: 登录后台管理账号（当前接口Authorization为固定值）
-#  requests:
-#    method: post
-#    headers:
-#      Content-Type: application/json
-#      Authorization: Basic bWFsbC1hZG1pbjoxMjM0NTY=
-#    url: ${module_url}/auth/oauth/token
-#    data:
-#      grantType: "PASSWORD"
-#      passwordModel:
-#        password: "pbbadmin123456"
-#        username: "admin"
-#  extract:
-#    HT_Authorization: "accessToken\":\"(.*?)\""
-#  validate:
-#    code: 200
-
-- name: 获取图片Base64
+- module: 后台管理-登录
+  title: 获取图片Base64
   requests:
     method: get
     headers:
@@ -31,7 +15,8 @@ PBB_backstage_login:
   validate:
     code: 200
 
-- name: 登录后台管理账号
+- module: 后台管理-登录
+  title: 输入账号、密码、验证码
   requests:
     method: post
     headers:

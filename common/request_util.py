@@ -12,7 +12,7 @@ class RequestUtil:
     session = requests.session()
 
     # 发送请求
-    def send_request_util(self, title, headers, url, data, method, max_timeout=5, proxies=None, **kwargs):
+    def send_request_util(self, module, title, headers, url, data, method, max_timeout=5, proxies=None, **kwargs):
         method = str(method).lower()
         start_time = time.time()
         rep = None
@@ -43,7 +43,7 @@ class RequestUtil:
             elapsed_time = end_time - start_time
             elapsed_time_rounded = round(elapsed_time, 2)
             if rep:
-                testcase_allure_attach(title, max_timeout, elapsed_time_rounded, rep.request.method, rep.url, headers, rep,
+                testcase_allure_attach(module, title, max_timeout, elapsed_time_rounded, rep.request.method, rep.url, headers, rep,
                                        request_data)
 
                 assert rep.status_code == 200

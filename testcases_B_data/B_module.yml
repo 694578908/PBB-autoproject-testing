@@ -1,4 +1,5 @@
-- name: 首页-推荐列表（全部）
+- module:
+  title: 推荐列表（全部）
   requests:
     method: post
     headers:

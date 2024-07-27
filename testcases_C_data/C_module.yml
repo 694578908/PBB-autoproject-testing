@@ -1,4 +1,5 @@
-- name: 首页-兼职列表
+- module: 首页
+  title: 兼职列表
   requests:
     method: post
     headers:
