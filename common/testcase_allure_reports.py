@@ -206,7 +206,7 @@ def dirpath_None_massage(yaml_path):
 
 
 def dir_None_massage(yaml_path):
-    log_status = f"当前{yaml_path}目录里没有文件"
+    log_status = f"当前{yaml_path}目录里没有文件或没有此文件"
     log.error(log_status)
 
 

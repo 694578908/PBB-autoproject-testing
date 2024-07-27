@@ -77,6 +77,7 @@ class YamlUtil:
             except yaml.YAMLError as exc:
                 YAMLError_exc_masssage(exc)
 
+    # 循环读取目录下的文件
     def read_testcase_dir(self, dir_name):
         yaml_path = os.path.join(os.getcwd(), dir_name)
         if os.path.exists(yaml_path) and os.path.isdir(yaml_path):
@@ -87,18 +88,16 @@ class YamlUtil:
                         try:
                             value = yaml.safe_load(stream=f)
                             if value:
-                                return value
+                                all_values.extend(value)
                             else:
                                 pytest.fail(yaml_None_massage(yaml_name))
                         except yaml.YAMLError as exc:
                             YAMLError_exc_masssage(exc)
-                    all_values.extend(value)
                 return all_values
             else:
                 pytest.fail(dir_None_massage(yaml_path))
         else:
             pytest.fail(dirpath_None_massage(yaml_path))
-            return []
 
     # 清除extract.yml
     def clear_extract_yaml(self, yaml_name):
